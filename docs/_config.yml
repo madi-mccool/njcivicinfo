@@ -1,0 +1,15 @@
+title: NJ Civic Info
+description: Civic information resources for New Jersey residents
+baseurl: "/njcivicinfo"
+url: ""
+
+theme: minima
+
+header_pages:
+  - index.md
+  - about.md
+  - contributing.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
