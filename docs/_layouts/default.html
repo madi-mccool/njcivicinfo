@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  {% seo %}
+  {% feed_meta %}
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">
+        <span class="logo-text">NJ Civic Information<br>Consortium</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+        <li><a href="{{ '/contributing/' | relative_url }}">Get Involved</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>NJ Civic Information Consortium</h3>
+          <p>A first-of-its-kind initiative established by the State of New Jersey to support the revitalization of local news and information across the state.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+            <li><a href="{{ '/contributing/' | relative_url }}">Get Involved</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Program Areas</h4>
+          <ul>
+            <li><a href="#priorities">Civic News Reporting</a></li>
+            <li><a href="#priorities">Journalism Pipeline</a></li>
+            <li><a href="#priorities">Civic Engagement</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact" id="contact">
+          <h4>Contact Us</h4>
+          <p>New Jersey Civic Information Consortium</p>
+          <p>Montclair State University</p>
+          <p>Montclair, NJ</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ 'now' | date: '%Y' }} New Jersey Civic Information Consortium. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

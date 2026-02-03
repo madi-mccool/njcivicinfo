@@ -1,15 +1,18 @@
-title: NJ Civic Info
-description: Civic information resources for New Jersey residents
+title: New Jersey Civic Information Consortium
+description: >-
+  The New Jersey Civic Information Consortium supports the revitalization
+  of local news and information across the state.
 baseurl: "/njcivicinfo"
 url: ""
-
-theme: minima
-
-header_pages:
-  - index.md
-  - about.md
-  - contributing.md
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+header_pages:
+  - about.md
+  - contributing.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
