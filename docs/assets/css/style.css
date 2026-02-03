@@ -20,8 +20,8 @@
   --color-gray-600: #6c757d;
   --color-gray-800: #343a40;
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   --nav-height: 80px;
   --container-max: 1200px;
