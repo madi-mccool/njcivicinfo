@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   {% seo %}
   {% feed_meta %}
 </head>
@@ -17,16 +18,18 @@
   <nav class="site-nav">
     <div class="nav-container">
       <a href="{{ '/' | relative_url }}" class="nav-logo">
-        <span class="logo-text">NJ Civic Information<br>Consortium</span>
+        <img src="{{ '/assets/images/logo-header.svg' | relative_url }}" alt="NJ Civic Information Consortium" class="nav-logo-img">
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
-        <li><a href="{{ '/contributing/' | relative_url }}">Get Involved</a></li>
-        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/what-we-do/' | relative_url }}" {% if page.url == '/what-we-do/' %}class="active"{% endif %}>What We Do</a></li>
+        <li><a href="{{ '/grantmaking/' | relative_url }}" {% if page.url == '/grantmaking/' %}class="active"{% endif %}>Grantmaking</a></li>
+        <li><a href="{{ '/press-forward-nj/' | relative_url }}" {% if page.url == '/press-forward-nj/' %}class="active"{% endif %}>Press Forward NJ</a></li>
+        <li><a href="{{ '/news-resources/' | relative_url }}" {% if page.url == '/news-resources/' %}class="active"{% endif %}>News &amp; Resources</a></li>
+        <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About Us</a></li>
       </ul>
     </div>
   </nav>
@@ -36,32 +39,46 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo-area">
+          <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="NJ Civic Information Consortium" class="footer-logo-img">
+          </a>
+          <p class="footer-address">1 Normal Avenue, Montclair, NJ 07043</p>
+        </div>
+      </div>
       <div class="footer-grid">
-        <div class="footer-about">
-          <h3>NJ Civic Information Consortium</h3>
-          <p>A first-of-its-kind initiative established by the State of New Jersey to support the revitalization of local news and information across the state.</p>
-        </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4>About Us</h4>
           <ul>
-            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
-            <li><a href="{{ '/contributing/' | relative_url }}">Get Involved</a></li>
+            <li><a href="{{ '/what-we-do/' | relative_url }}">What We Do</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">Staff &amp; Board</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Program Areas</h4>
+          <h4>Grantmaking</h4>
           <ul>
-            <li><a href="#priorities">Civic News Reporting</a></li>
-            <li><a href="#priorities">Journalism Pipeline</a></li>
-            <li><a href="#priorities">Civic Engagement</a></li>
+            <li><a href="{{ '/grantmaking/' | relative_url }}">Program Priorities &amp; Strategies</a></li>
+            <li><a href="https://njcivicinfo.org/map" target="_blank" rel="noopener">Grantee Map</a></li>
+            <li><a href="{{ '/grantmaking/' | relative_url }}#application-procedures">Application Procedures</a></li>
+            <li><a href="https://njcivicinfo.org/grantees/" target="_blank" rel="noopener">Grants Database</a></li>
           </ul>
         </div>
-        <div class="footer-contact" id="contact">
-          <h4>Contact Us</h4>
-          <p>New Jersey Civic Information Consortium</p>
-          <p>Montclair State University</p>
-          <p>Montclair, NJ</p>
+        <div class="footer-links">
+          <h4>Stay Connected</h4>
+          <ul>
+            <li><a href="mailto:info@njcivicinfo.org">Contact Us</a></li>
+            <li>
+              <div class="social-links">
+                <a href="https://linktr.ee/njcivicinfo" target="_blank" rel="noopener" aria-label="Linktree"><i class="fas fa-link"></i></a>
+                <a href="https://www.facebook.com/njcivicinfo" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/njcivicinfo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/njcivicinfo" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.threads.net/@njcivicinfo" target="_blank" rel="noopener" aria-label="Threads"><i class="fab fa-threads"></i></a>
+              </div>
+            </li>
+            <li><a href="https://njcivicinfo.org/contact/" target="_blank" rel="noopener">Subscribe to Newsletter</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
@@ -75,6 +92,23 @@
     document.querySelector('.nav-toggle').addEventListener('click', function() {
       document.querySelector('.nav-links').classList.toggle('active');
       this.classList.toggle('active');
+    });
+
+    // Click-to-expand functionality
+    document.querySelectorAll('.expand-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var content = this.nextElementSibling;
+        var icon = this.querySelector('.expand-icon');
+        if (content.classList.contains('expand-open')) {
+          content.classList.remove('expand-open');
+          content.style.maxHeight = null;
+          icon.textContent = '+';
+        } else {
+          content.classList.add('expand-open');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.textContent = '−';
+        }
+      });
     });
   </script>
 </body>
