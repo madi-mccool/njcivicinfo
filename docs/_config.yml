@@ -11,7 +11,10 @@ plugins:
 
 header_pages:
   - about.md
-  - contributing.md
+  - what-we-do.html
+  - grantmaking.html
+  - press-forward-nj.html
+  - news-resources.html
 
 exclude:
   - Gemfile
