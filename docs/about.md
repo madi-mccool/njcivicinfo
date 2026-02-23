@@ -21,6 +21,9 @@ permalink: /about/
         <p>The New Jersey Civic Information Consortium was created by the State of New Jersey in 2018 to address the local news crisis. It emerged from a broad stakeholder coalition led by Free Press, building on prior initiatives by the Geraldine R. Dodge Foundation and Montclair State University's Center for Cooperative Media.</p>
         <p>Six public universities partner in this effort: The College of New Jersey, Montclair State University, NJIT, Rowan University, Kean University, and Rutgers University. Montclair State serves as the host institution.</p>
         <p>A 16-member Board of Directors governs the Consortium's operations, and state law prevents New Jersey and the Consortium from owning funded projects or exercising editorial control.</p>
+        <div class="video-embed-wrapper" style="margin-top: 32px;">
+          <iframe src="https://www.youtube.com/embed/zbSi8QIEhTM" title="NJ Civic Information Consortium" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-embed"></iframe>
+        </div>
       </div>
       <div class="content-feature">
         <div class="vision-card">
@@ -185,10 +188,9 @@ permalink: /about/
 <section class="cta-section">
   <div class="cta-container">
     <h2>Get in Touch</h2>
-    <p>Have questions? We'd love to hear from you.</p>
+    <p>Have questions or want to partner? We'd love to hear from you.</p>
     <div class="cta-buttons">
       <a href="mailto:info@njcivicinfo.org" class="btn btn-primary">Email Us</a>
-      <a href="{{ '/news-resources/' | relative_url }}" class="btn btn-outline">News &amp; Resources</a>
     </div>
   </div>
 </section>
