@@ -1568,19 +1568,31 @@ h4 { font-weight: 700; }
   box-shadow: var(--shadow-sm);
 }
 
-.board-member strong {
+.board-member .board-name {
   display: block;
   font-size: 15px;
   font-weight: 800;
-  color: var(--color-navy);
-  margin-bottom: 4px;
+  color: #2dc8d2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
 }
 
-.board-member span {
+.board-member .board-title {
   display: block;
   font-size: 13px;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.5;
+}
+
+.board-member .board-appointment {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
   color: var(--color-gray-600);
   line-height: 1.5;
+  margin-top: 4px;
 }
 
 /* ============================================
