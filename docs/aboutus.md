@@ -65,7 +65,7 @@ permalink: /about/
       </div>
       <div class="team-card">
         <div class="team-photo">
-          <img src="{{docs/assets/images/Ayinde.png}}" alt="Ayinde Merrill">
+          <img src="{{ '/assets/images/ayinde-merrill.jpg' | relative_url }}" alt="Ayinde Merrill">
         </div>
         <h3>Ayinde Merrill</h3>
         <span class="team-title">Program Officer</span>
