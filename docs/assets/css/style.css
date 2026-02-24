@@ -265,7 +265,17 @@ h4 { font-weight: 700; }
 }
 
 .hero.hero-photo {
-  background: url('../images/hero-bg.jpg') center center / cover no-repeat;
+  background: var(--color-navy);
+}
+
+.hero.hero-photo > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero.hero-photo::before {
