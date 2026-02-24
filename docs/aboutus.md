@@ -110,67 +110,69 @@ permalink: /about/
     <div class="board-grid">
       <div class="board-member">
         <strong>Christopher J. Daggett</strong>
-        <span>Board Chair, 2025</span>
+        <span>Chairperson</span>
       </div>
       <div class="board-member">
         <strong>Molly de Aguiar</strong>
-        <span>President, Independence Public Media Foundation</span>
-      </div>
-      <div class="board-member">
-        <strong>Kevin Belfield</strong>
-        <span>Dean, College of Science and Liberal Arts, NJIT</span>
-      </div>
-      <div class="board-member">
-        <strong>Brian T. Murray</strong>
-        <span>Assistant County Administrator, Morris County</span>
-      </div>
-      <div class="board-member">
-        <strong>Matthew Weber</strong>
-        <span>Associate Professor of Communication, Rutgers</span>
-      </div>
-      <div class="board-member">
-        <strong>Kim Pearson</strong>
-        <span>Professor of Journalism and Professional Writing, TCNJ</span>
-      </div>
-      <div class="board-member">
-        <strong>Carl Hausman</strong>
-        <span>Professor of Journalism, Rowan University</span>
-      </div>
-      <div class="board-member">
-        <strong>Jerome Montes</strong>
-        <span>Director of Outreach, Communications and Marketing, NJ Citizen Action</span>
-      </div>
-      <div class="board-member">
-        <strong>Marisol M. Peron</strong>
-        <span>Senior VP Global Investor Relations &amp; Communications, Genmab US</span>
-      </div>
-      <div class="board-member">
-        <strong>David Wildstein</strong>
-        <span>Editor, New Jersey Globe</span>
-      </div>
-      <div class="board-member">
-        <strong>Mike Rispoli</strong>
-        <span>News Voices Program Director, Free Press</span>
-      </div>
-      <div class="board-member">
-        <strong>Laura Marie Ali</strong>
-        <span>Republican Chair of Chairs, State of New Jersey</span>
-      </div>
-      <div class="board-member">
-        <strong>Robin Wilson-Glover</strong>
-        <span>Founding Editor, Mosaic; former Director of Opinion, NJ Advance Media</span>
+        <span>Treasurer</span>
+        <span>State Assembly Speaker Appointment</span>
       </div>
       <div class="board-member">
         <strong>Therise Edwards</strong>
-        <span>President, Teshley Solutions LLC</span>
+        <span>Vice Chairperson</span>
+        <span>Public Appointment</span>
       </div>
       <div class="board-member">
-        <strong>Audrey Kelly</strong>
-        <span>Executive Director, Kean Board of Trustees</span>
+        <strong>Brian T. Murray</strong>
+        <span>State Senate Minority Leader Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Kevin Belfield</strong>
+        <span>New Jersey Institute of Technology Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Matthew Weber</strong>
+        <span>Rutgers University Appointment</span>
       </div>
       <div class="board-member">
         <strong>Carrie Brown</strong>
-        <span>Associate Professor of Journalism, Montclair State University</span>
+        <span>Montclair State University Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Jerome Montes</strong>
+        <span>Governor Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>David Wildstein</strong>
+        <span>State Senate President Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Kim Pearson</strong>
+        <span>The College of New Jersey Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Carl Hausman</strong>
+        <span>Rowan University Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Marisol M. Peron</strong>
+        <span>Board - Technology Sector Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Natalie Hamilton</strong>
+        <span>Governor Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Audrey Kelly</strong>
+        <span>Kean University Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Robin Wilson-Glover</strong>
+        <span>Board - Media Sector Appointment</span>
+      </div>
+      <div class="board-member">
+        <strong>Laura Marie Ali</strong>
+        <span>State Assembly Minority Leader Appointment</span>
       </div>
     </div>
   </div>
