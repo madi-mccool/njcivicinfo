@@ -3,7 +3,26 @@ description: >-
   The New Jersey Civic Information Consortium supports the revitalization
   of local news and information across the state.
 baseurl: "/njcivicinfo"
-url: ""
+url: "https://madi-mccool.github.io"
+
+logo: /assets/images/logo-favicon.png
+image: /assets/images/Website Banner.png
+
+twitter:
+  card: summary_large_image
+social:
+  name: New Jersey Civic Information Consortium
+  links:
+    - https://www.linkedin.com/company/new-jersey-civic-information-consortium/
+    - https://www.facebook.com/njcivicinfo
+    - https://www.instagram.com/njcivicinfo
+    - https://x.com/njcivicinfo
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/Website Banner.png
 
 plugins:
   - jekyll-feed
