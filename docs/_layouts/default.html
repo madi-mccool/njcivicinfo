@@ -125,9 +125,9 @@
       });
     });
 
-    // Count-up animation for impact callout numbers
+    // Count-up animation for impact numbers
     (function() {
-      var counters = document.querySelectorAll('.impact-callout-number[data-target]');
+      var counters = document.querySelectorAll('.impact-callout-number[data-target], .stat-number[data-target]');
       if (!counters.length) return;
 
       function formatNumber(num, format) {

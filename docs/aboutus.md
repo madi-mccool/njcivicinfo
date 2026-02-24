@@ -48,6 +48,9 @@ permalink: /about/
 
     <div class="team-grid">
       <div class="team-card">
+        <div class="team-photo">
+          <img src="{{ '/assets/images/lisa-sahulka.jpg' | relative_url }}" alt="Lisa Sahulka">
+        </div>
         <h3>Lisa Sahulka</h3>
         <span class="team-title">Executive Director</span>
         <div class="expand-item">
@@ -61,6 +64,9 @@ permalink: /about/
         </div>
       </div>
       <div class="team-card">
+        <div class="team-photo">
+          <img src="{{ '/assets/images/ayinde-merrill.jpg' | relative_url }}" alt="Ayinde Merrill">
+        </div>
         <h3>Ayinde Merrill</h3>
         <span class="team-title">Program Officer</span>
         <div class="expand-item">
@@ -74,6 +80,9 @@ permalink: /about/
         </div>
       </div>
       <div class="team-card">
+        <div class="team-photo">
+          <img src="{{ '/assets/images/madison-mccool.jpg' | relative_url }}" alt="Madison McCool">
+        </div>
         <h3>Madison McCool</h3>
         <span class="team-title">Grants + Communications Manager</span>
         <div class="expand-item">
