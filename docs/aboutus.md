@@ -110,7 +110,7 @@ permalink: /about/
     <div class="board-grid">
       <div class="board-member">
         <strong>Christopher J. Daggett</strong>
-        <span>Chairperson, 2025</span>
+        <strong>Chairperson, 2025</strong>
         <span>Independent Consultant</span>
       </div>
       <div class="board-member">
