@@ -110,68 +110,84 @@ permalink: /about/
     <div class="board-grid">
       <div class="board-member">
         <strong>Christopher J. Daggett</strong>
-        <span>Chairperson</span>
+        <span>Chairperson, 2025</span>
+        <span>Independent Consultant</span>
       </div>
       <div class="board-member">
         <strong>Molly de Aguiar</strong>
         <span>Treasurer</span>
+        <span>President, Independence Public Media Foundation</span>
         <span>State Assembly Speaker Appointment</span>
       </div>
       <div class="board-member">
         <strong>Therise Edwards</strong>
         <span>Vice Chairperson</span>
+        <span>President, Teshly Solutions LLC</span>
         <span>Public Appointment</span>
       </div>
       <div class="board-member">
         <strong>Brian T. Murray</strong>
+        <span>Assistant County Administrator, Morris County Government</span>
         <span>State Senate Minority Leader Appointment</span>
       </div>
       <div class="board-member">
         <strong>Kevin Belfield</strong>
+        <span>Dean, College of Science and Liberal Arts</span>
         <span>New Jersey Institute of Technology Appointment</span>
       </div>
       <div class="board-member">
         <strong>Matthew Weber</strong>
+        <span>Professor of Communication, Rutgers School of Communication and Information</span>
         <span>Rutgers University Appointment</span>
       </div>
       <div class="board-member">
         <strong>Carrie Brown</strong>
+        <span>Associate Professor of Journalism</span>
         <span>Montclair State University Appointment</span>
       </div>
       <div class="board-member">
         <strong>Jerome Montes</strong>
+        <span>Dir. of Outreach, Communications, and Marketing, NJ Citizen Action</span>
         <span>Governor Appointment</span>
       </div>
       <div class="board-member">
         <strong>David Wildstein</strong>
+        <span>Editor, NJ Globe</span>
         <span>State Senate President Appointment</span>
       </div>
       <div class="board-member">
         <strong>Kim Pearson</strong>
+        <span>Associate Professor of Journalism and Professional Writing, Retired</span>
         <span>The College of New Jersey Appointment</span>
       </div>
       <div class="board-member">
         <strong>Carl Hausman</strong>
+        <span>Professor of Journalism</span>
         <span>Rowan University Appointment</span>
       </div>
       <div class="board-member">
         <strong>Marisol M. Peron</strong>
+        <span>Senior VP, Global Investor Relations & Comms, Genmab US, Inc</span>
         <span>Board - Technology Sector Appointment</span>
       </div>
       <div class="board-member">
         <strong>Natalie Hamilton</strong>
+        <span>Director of Communications, FIFA World Cup 2026™ NYNJ</span>
         <span>Governor Appointment</span>
       </div>
       <div class="board-member">
         <strong>Audrey Kelly</strong>
+        <span>Executive Director, Kean University Board of Trustees</span>
         <span>Kean University Appointment</span>
       </div>
       <div class="board-member">
         <strong>Robin Wilson-Glover</strong>
+        <span>Director Digital Opinion, NJ Advance Media, Retired</span>
         <span>Board - Media Sector Appointment</span>
       </div>
       <div class="board-member">
         <strong>Laura Marie Ali</strong>
+        <span>Chair of Chairs of the GOP</span>
         <span>State Assembly Minority Leader Appointment</span>
       </div>
     </div>
