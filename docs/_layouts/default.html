@@ -45,12 +45,14 @@
             <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="NJ Civic Information Consortium" class="footer-logo-img">
           </a>
           <p class="footer-address">1 Normal Avenue<br>Montclair, NJ 07043</p>
+          <p class="footer-email"><a href="mailto:info@njcivicinfo.org">info@njcivicinfo.org</a></p>
         </div>
         <div class="footer-links">
           <h4>About Us</h4>
           <ul>
             <li><a href="{{ '/what-we-do/' | relative_url }}">What We Do</a></li>
             <li><a href="{{ '/about/' | relative_url }}">Staff &amp; Board</a></li>
+            <li><a href="{{ '/faqs/' | relative_url }}">Frequently Asked Questions</a></li>
           </ul>
         </div>
         <div class="footer-links">
@@ -122,6 +124,57 @@
         }
       });
     });
+
+    // Count-up animation for impact callout numbers
+    (function() {
+      var counters = document.querySelectorAll('.impact-callout-number[data-target]');
+      if (!counters.length) return;
+
+      function formatNumber(num, format) {
+        if (format === 'comma') {
+          return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+        return num.toString();
+      }
+
+      function animateCounter(el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var prefix = el.getAttribute('data-prefix') || '';
+        var suffix = el.getAttribute('data-suffix') || '';
+        var format = el.getAttribute('data-format') || '';
+        var duration = 2000;
+        var startTime = null;
+
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          // Ease-out cubic
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var current = Math.floor(eased * target);
+          el.textContent = prefix + formatNumber(current, format) + suffix;
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = prefix + formatNumber(target, format) + suffix;
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      counters.forEach(function(counter) {
+        observer.observe(counter);
+      });
+    })();
   </script>
 </body>
 </html>
