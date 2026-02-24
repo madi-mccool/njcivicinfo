@@ -2,6 +2,7 @@
 layout: default
 title: About Us
 permalink: /about/
+description: "Meet the staff and board of the NJ Civic Information Consortium, a first-of-its-kind initiative supporting local news in New Jersey."
 ---
 
 <section class="page-hero">
