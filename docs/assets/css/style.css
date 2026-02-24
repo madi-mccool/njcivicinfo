@@ -2427,3 +2427,116 @@ h4 { font-weight: 700; }
     height: 120px;
   }
 }
+
+/* ============================================
+   PAGE-SPECIFIC BACKGROUND PHOTOS
+   ============================================ */
+
+/* --- Hero Background Photos --- */
+.page-hero-what-we-do::after,
+.page-hero-grantmaking::after,
+.page-hero-press-forward::after,
+.page-hero-news-resources::after,
+.page-hero-about-us::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page-hero-what-we-do::after {
+  background-image: url('../images/what%20we%20do-header.png');
+}
+
+.page-hero-grantmaking::after {
+  background-image: url('../images/grantmaking-header.png');
+}
+
+.page-hero-press-forward::after {
+  background-image: url('../images/press%20forward%20new%20jersey-header.png');
+}
+
+.page-hero-news-resources::after {
+  background-image: url('../images/news%20%26%20resources-header.png');
+}
+
+.page-hero-about-us::after {
+  background-image: url('../images/about%20us-header.png');
+}
+
+/* --- Section Background Photos --- */
+.section-bg-what-we-do,
+.section-bg-grantmaking {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-bg-what-we-do::after,
+.section-bg-grantmaking::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.07;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section-bg-what-we-do::after {
+  background-image: url('../images/what%20we%20do-section.png');
+}
+
+.section-bg-grantmaking::after {
+  background-image: url('../images/grantmaking-section.png');
+}
+
+.section-bg-what-we-do > .content-container,
+.section-bg-grantmaking > .content-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Mobile Optimization for Background Photos --- */
+@media (max-width: 768px) {
+  .page-hero-what-we-do::after,
+  .page-hero-grantmaking::after,
+  .page-hero-press-forward::after,
+  .page-hero-news-resources::after,
+  .page-hero-about-us::after {
+    opacity: 0.1;
+    background-position: center top;
+  }
+
+  .section-bg-what-we-do::after,
+  .section-bg-grantmaking::after {
+    opacity: 0.04;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero-what-we-do::after,
+  .page-hero-grantmaking::after,
+  .page-hero-press-forward::after,
+  .page-hero-news-resources::after,
+  .page-hero-about-us::after {
+    opacity: 0.08;
+  }
+
+  .section-bg-what-we-do::after,
+  .section-bg-grantmaking::after {
+    opacity: 0.03;
+  }
+}

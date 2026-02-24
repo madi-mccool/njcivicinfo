@@ -5,7 +5,7 @@ permalink: /about/
 description: "Meet the staff and board of the NJ Civic Information Consortium, a first-of-its-kind initiative supporting local news in New Jersey."
 ---
 
-<section class="page-hero">
+<section class="page-hero page-hero-about-us">
   <div class="page-hero-content">
     <span class="hero-label">Our Organization</span>
     <h1>About Us</h1>
