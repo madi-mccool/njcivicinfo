@@ -1825,8 +1825,9 @@ h4 { font-weight: 700; }
   }
 
   .hero {
-    min-height: 520px;
-    padding: 0 0 60px 0;
+    min-height: auto;
+    padding: 60px 0 50px;
+    align-items: flex-start;
   }
 
   .hero h1 {
