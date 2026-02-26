@@ -210,6 +210,33 @@ description: "Meet the staff and board of the NJ Civic Information Consortium, a
       <div class="university-item">Kean University</div>
       <div class="university-item">Rutgers University</div>
     </div>
+
+    <div class="section-header" style="margin-top: 64px;">
+      <h2>Funders</h2>
+    </div>
+    <div class="university-grid">
+      <div class="university-item">The State of New Jersey</div>
+      <div class="university-item">Robert Wood Johnson Foundation</div>
+      <div class="university-item">Democracy Fund</div>
+      <div class="university-item">Press Forward</div>
+      <div class="university-item">F.M. Kirby Foundation</div>
+      <div class="university-item">Community Foundation of New Jersey</div>
+      <div class="university-item">Grunin Foundation</div>
+      <div class="university-item">EQUIP NJ</div>
+    </div>
+
+    <div class="section-header" style="margin-top: 64px;">
+      <h2>Collaborative Partners</h2>
+    </div>
+    <div class="university-grid">
+      <div class="university-item">Free Press</div>
+      <div class="university-item">Hoboken Strategy Group</div>
+      <div class="university-item">Center for Cooperative Media at Montclair State University</div>
+      <div class="university-item">Community Foundation of South Jersey</div>
+      <div class="university-item">Blue Engine Collaborative</div>
+      <div class="university-item">City Bureau</div>
+      <div class="university-item">Rebuild Local News</div>
+    </div>
   </div>
 </section>
 
