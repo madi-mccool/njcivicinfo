@@ -231,7 +231,7 @@ description: "Meet the staff and board of the NJ Civic Information Consortium, a
     <div class="university-grid">
       <div class="university-item">Free Press</div>
       <div class="university-item">Hoboken Strategy Group</div>
-      <div class="university-item">Center for Cooperative Media at Montclair State University</div>
+      <div class="university-item">Center for Cooperative Media at MSU</div>
       <div class="university-item">Community Foundation of South Jersey</div>
       <div class="university-item">Blue Engine Collaborative</div>
       <div class="university-item">City Bureau</div>
