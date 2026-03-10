@@ -342,7 +342,7 @@ h4 { font-weight: 700; }
   z-index: 2;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 48px;
   width: 100%;
 }
 
@@ -365,7 +365,7 @@ h4 { font-weight: 700; }
   font-weight: 900;
   color: var(--color-white);
   line-height: 1.08;
-  max-width: 780px;
+  max-width: 900px;
   margin-bottom: 28px;
   letter-spacing: -0.02em;
 }
@@ -378,7 +378,7 @@ h4 { font-weight: 700; }
   font-size: 19px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.78);
-  max-width: 580px;
+  max-width: 700px;
   line-height: 1.7;
   margin-bottom: 40px;
 }
@@ -1830,12 +1830,22 @@ h4 { font-weight: 700; }
     align-items: flex-start;
   }
 
+  .hero-content {
+    padding: 0 24px;
+  }
+
   .hero h1 {
     font-size: 36px;
+    max-width: 100%;
   }
 
   .hero-subtitle {
     font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-impact-callout {
+    max-width: 100%;
   }
 
   .page-hero {
@@ -2551,7 +2561,7 @@ h4 { font-weight: 700; }
   border-radius: var(--radius-sm);
   padding: 16px 24px;
   margin-bottom: 32px;
-  max-width: 620px;
+  max-width: 740px;
 }
 
 .hero-impact-text {
