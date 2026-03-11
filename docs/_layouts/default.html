@@ -129,21 +129,31 @@
 
     // Count-up animation for impact numbers
     (function() {
-      var counters = document.querySelectorAll('.impact-callout-number[data-target], .stat-number[data-target], .impact-bento-number[data-target]');
+      var counters = document.querySelectorAll('.impact-callout-number[data-target], .stat-number[data-target], .impact-bento-number[data-target], .digital-impact-number[data-target]');
       if (!counters.length) return;
 
-      function formatNumber(num, format) {
-        if (format === 'comma') {
-          return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      function formatNumber(num, format, decimal) {
+        if (decimal) {
+          var str = num.toFixed(parseInt(decimal, 10));
+          if (format === 'comma') {
+            var parts = str.split('.');
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            return parts.join('.');
+          }
+          return str;
         }
-        return num.toString();
+        if (format === 'comma') {
+          return Math.floor(num).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+        return Math.floor(num).toString();
       }
 
       function animateCounter(el) {
-        var target = parseInt(el.getAttribute('data-target'), 10);
+        var target = parseFloat(el.getAttribute('data-target'));
         var prefix = el.getAttribute('data-prefix') || '';
         var suffix = el.getAttribute('data-suffix') || '';
         var format = el.getAttribute('data-format') || '';
+        var decimal = el.getAttribute('data-decimal') || '';
         var duration = 2000;
         var startTime = null;
 
@@ -152,12 +162,12 @@
           var progress = Math.min((timestamp - startTime) / duration, 1);
           // Ease-out cubic
           var eased = 1 - Math.pow(1 - progress, 3);
-          var current = Math.floor(eased * target);
-          el.textContent = prefix + formatNumber(current, format) + suffix;
+          var current = eased * target;
+          el.textContent = prefix + formatNumber(current, format, decimal) + suffix;
           if (progress < 1) {
             requestAnimationFrame(step);
           } else {
-            el.textContent = prefix + formatNumber(target, format) + suffix;
+            el.textContent = prefix + formatNumber(target, format, decimal) + suffix;
           }
         }
 
