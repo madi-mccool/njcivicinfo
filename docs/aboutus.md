@@ -92,7 +92,7 @@ description: "Meet the staff and board of the NJ Civic Information Consortium, a
             <span class="expand-icon">+</span>
           </button>
           <div class="expand-content">
-            <p>Madison provides administrative support for grant work and leads communication efforts for the Consortium, with a background in office management and communications.</p>
+            <p>Madison (Madi) serves as the Grants and Communications Manager for the Consortium, where she leads the organization’s communications strategy, supports the administration of grant programs, and manages back-office support. With a background in office management and communications, Madi plays a key role in connecting the Consortium’s work with stakeholders including journalists, policymakers, universities, and community partners. </p>
           </div>
         </div>
       </div>
