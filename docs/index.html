@@ -7,7 +7,7 @@ description: "The New Jersey Civic Information Consortium invests in local news 
 
 <!-- Hero Section -->
 <section class="hero hero-photo">
-  <img src="{{ '/assets/images/Website Banner.png' | relative_url }}" alt="NJCIC">
+  <img src="{{ '/assets/images/website-banner.png' | relative_url }}" alt="NJCIC">
   <div class="hero-content">
     <span class="hero-label">First of Its Kind in the Nation</span>
     <h1>Keeping New Jersey communities <span class="highlight">informed, connected, and heard.</span></h1>
@@ -49,83 +49,9 @@ description: "The New Jersey Civic Information Consortium invests in local news 
   </div>
 </section>
 
-<!-- At a Glance Impact Section -->
-<section class="impact-bento">
-  <div class="impact-bento-container">
-    <div class="impact-bento-header">
-      <span class="section-label">At a Glance</span>
-      <h2>Our Impact Across New Jersey</h2>
-    </div>
-    <div class="impact-bento-grid">
-      <div class="impact-bento-card impact-bento-wide" style="--card-accent: #3AC5C9;">
-        <div class="impact-bento-number" data-target="12" data-prefix="$" data-suffix="M+">$0M+</div>
-        <div class="impact-bento-label">Invested in civic information across the state</div>
-      </div>
-      <div class="impact-bento-card" style="--card-accent: #F34213;">
-        <div class="impact-bento-number" data-target="13000" data-format="comma" data-suffix="+">0+</div>
-        <div class="impact-bento-label">Stories published</div>
-      </div>
-      <div class="impact-bento-card" style="--card-accent: #E6AF2E;">
-        <div class="impact-bento-number" data-target="5900" data-format="comma" data-suffix="+">0+</div>
-        <div class="impact-bento-label">BIPOC-focused news stories published</div>
-      </div>
-      <div class="impact-bento-card" style="--card-accent: #F34213;">
-        <div class="impact-bento-number" data-target="1601" data-format="comma">0</div>
-        <div class="impact-bento-label">Community storytellers trained</div>
-      </div>
-      <div class="impact-bento-card" style="--card-accent: #E6AF2E;">
-        <div class="impact-bento-number" data-target="220">0</div>
-        <div class="impact-bento-label">Journalism jobs funded</div>
-      </div>
-      <div class="impact-bento-card" style="--card-accent: #3AC5C9;">
-        <div class="impact-bento-number" data-target="109">0</div>
-        <div class="impact-bento-label">Journalism careers launched</div>
-      </div>
-    </div>
-    <div style="text-align: center; margin-top: 40px;">
-      <a href="https://njcivicinfo.org/wp-content/uploads/2026/02/2025-Annual-Report-New-Jersey-Civic-Info-Consortium.pdf" target="_blank" rel="noopener" class="btn btn-primary">View Our 2025 Annual Report</a>
-    </div>
-  </div>
-</section>
+{% include impact-bento.html %}
 
-<!-- Digital Impact Section -->
-<section class="digital-impact">
-  <div class="digital-impact-container">
-    <div class="digital-impact-header">
-      <span class="section-label">Digital Impact</span>
-      <h2>Reaching Communities Online</h2>
-    </div>
-    <div class="digital-impact-intro">
-      <p>Each month, there are more than 1 million unique visits to our grantees&rsquo; websites to access the local news they need to stay informed about their communities, which we estimate is currently reaching 1 in every 4 New Jersey households. Collectively, these local news and civic information organizations generate over 18 million total visits to their websites per year. And, these numbers reflect online readership alone &mdash; our grantees also bring trusted local journalism to New Jersey residents through community events, training programs, print publications, and other direct engagement.</p>
-    </div>
-    <div class="digital-impact-grid">
-      <div class="digital-impact-card" style="--card-accent: #3AC5C9;">
-        <div class="digital-impact-number" data-target="18" data-suffix="M+">0M+</div>
-        <div class="digital-impact-label">Visits annually across grantee news sites</div>
-      </div>
-      <div class="digital-impact-card" style="--card-accent: #F34213;">
-        <div class="digital-impact-number" data-target="12" data-suffix="M+">0M+</div>
-        <div class="digital-impact-label">Unique visits annually across grantee news sites</div>
-      </div>
-      <div class="digital-impact-card" style="--card-accent: #E6AF2E;">
-        <div class="digital-impact-number" data-target="1.5" data-suffix="M+" data-decimal="1">0M+</div>
-        <div class="digital-impact-label">Visits per month across grantee news sites</div>
-      </div>
-      <div class="digital-impact-card" style="--card-accent: #3AC5C9;">
-        <div class="digital-impact-number" data-target="1" data-suffix="M+">0M+</div>
-        <div class="digital-impact-label">Unique visits per month across grantee news sites</div>
-      </div>
-      <div class="digital-impact-card digital-impact-card-highlight" style="--card-accent: #E6AF2E;">
-        <div class="digital-impact-number" data-static="true">1 in 4</div>
-        <div class="digital-impact-label">New Jersey households access an NJCIC-funded news site each month</div>
-      </div>
-      <div class="digital-impact-card digital-impact-card-highlight" style="--card-accent: #F34213;">
-        <div class="digital-impact-number" data-static="true">Nearly &#8531;</div>
-        <div class="digital-impact-label">Of online visitors returning to an NJCIC-funded news site each month</div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include digital-impact.html %}
 
 <!-- Testimonials Section -->
 <section class="testimonials-section">
@@ -139,60 +65,17 @@ description: "The New Jersey Civic Information Consortium invests in local news 
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
       </button>
       <div class="testimonials-track">
+        {% for t in site.data.testimonials %}
         <div class="testimonial-card">
           <div class="testimonial-quote">
-            <p>&ldquo;Support from NJCIC has really made a difference for us over the past few years. Because of this funding, we&rsquo;ve developed and provided free training programs for many students who might not otherwise have access to professional media education.&rdquo;</p>
+            <p>&ldquo;{{ t.quote }}&rdquo;</p>
           </div>
           <div class="testimonial-author">
-            <strong>Neal Bennett</strong>
-            <span>Industry Media Arts</span>
+            <strong>{{ t.name }}</strong>
+            <span>{{ t.org }}</span>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <p>&ldquo;NJCIC funding has allowed us to double-down on our coverage of Newark school board, providing a texting service that allows busy readers to get updates from the team about issues that matter most to them.&rdquo;</p>
-          </div>
-          <div class="testimonial-author">
-            <strong>Sarah Darville</strong>
-            <span>Chalkbeat Newark</span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <p>&ldquo;Because of NJCIC funding, we&rsquo;ve trained over 250 high school students in podcasting. We&rsquo;ve taken our students on two field trips to see how journalism works in the real world, and we&rsquo;ve allowed our students to engage with the news on a more personal and interactive level.&rdquo;</p>
-          </div>
-          <div class="testimonial-author">
-            <strong>Sarah Schillaci</strong>
-            <span>Wayne Hills High School</span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <p>&ldquo;Working with NJCIC has meant that we have been able to interact with all ages in our communities and all demographics, continuing to build new ways that we&rsquo;re helping our community understand what&rsquo;s happening in our local government.&rdquo;</p>
-          </div>
-          <div class="testimonial-author">
-            <strong>Victoria Mastellar</strong>
-            <span>coLAB Arts</span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <p>&ldquo;We first received funding from NJCIC 3 years ago, and it has allowed us to launch a fellowship program that has helped 9 NJ-based journalists build their careers in local journalism so far, with many more to come, we hope.&rdquo;</p>
-          </div>
-          <div class="testimonial-author">
-            <strong>Ambreen Ali</strong>
-            <span>Central Desi</span>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <p>&ldquo;Thanks to the NJCIC, last year, we were able to establish a fully furnished video studio right in the heart of Trenton.&rdquo;</p>
-          </div>
-          <div class="testimonial-author">
-            <strong>Mark Sterling</strong>
-            <span>Central New Jersey Network</span>
-          </div>
-        </div>
+        {% endfor %}
       </div>
       <button class="testimonial-arrow testimonial-arrow-right" aria-label="Next testimonial">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
@@ -210,7 +93,7 @@ description: "The New Jersey Civic Information Consortium invests in local news 
       <p>See where Consortium-funded projects are making a difference across New Jersey.</p>
     </div>
     <div class="map-cta-card map-cta-card-photo">
-      <img src="{{ '/assets/images/Grantee Map Image.png' | relative_url }}" alt="Interactive Grantee Map of New Jersey" class="map-cta-bg-img">
+      <img src="{{ '/assets/images/grantee-map-image.png' | relative_url }}" alt="Interactive Grantee Map of New Jersey" class="map-cta-bg-img">
       <div class="map-cta-overlay">
         <h3>Interactive Grantee Map</h3>
         <p>Explore an interactive map of Consortium-funded projects across New Jersey. See where our grantees are making a difference in communities statewide.</p>
