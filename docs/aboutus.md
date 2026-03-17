@@ -51,7 +51,7 @@ description: "Meet the staff and board of the NJ Civic Information Consortium, a
       {% for member in site.data.staff %}
       <div class="team-card">
         <div class="team-photo">
-          <img src="{{ ‘/assets/images/’ | append: member.photo | relative_url }}" alt="{{ member.name }}">
+          <img src="/assets/images/{{ member.photo }}" alt="{{ member.name }}">
         </div>
         <h3>{{ member.name }}</h3>
         <span class="team-title">{{ member.title }}</span>
