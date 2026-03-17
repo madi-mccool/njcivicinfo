@@ -2449,7 +2449,8 @@ h4 { font-weight: 700; }
 .page-hero-grantmaking::after,
 .page-hero-press-forward::after,
 .page-hero-news-resources::after,
-.page-hero-about-us::after {
+.page-hero-about-us::after,
+.page-hero-internship::after {
   content: '';
   position: absolute;
   top: 0;
@@ -2482,6 +2483,115 @@ h4 { font-weight: 700; }
 
 .page-hero-about-us::after {
   background-image: url('../images/about%20us-header.png');
+}
+
+.page-hero-internship::after {
+  background-image: url('../images/grantmaking-header.png');
+}
+
+/* --- Internship Page Styles --- */
+.internship-dates-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.internship-date-card {
+  flex: 1;
+  min-width: 260px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-200);
+}
+
+.internship-date-card h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--color-navy);
+}
+
+.internship-date-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.internship-date-card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-gray-100);
+  font-size: 16px;
+}
+
+.internship-date-card ul li:last-child {
+  border-bottom: none;
+}
+
+.internship-resources-grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.internship-resource-card {
+  flex: 1;
+  min-width: 300px;
+  background: var(--color-offwhite);
+  border-radius: var(--radius);
+  padding: 36px;
+  border: 1px solid var(--color-gray-200);
+}
+
+.resource-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.resource-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resource-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-white);
+}
+
+.resource-card-header h3 {
+  font-size: 22px;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.internship-resource-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.internship-resource-card p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.internship-resource-card ul {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.internship-resource-card ul li {
+  margin-bottom: 6px;
+  line-height: 1.6;
 }
 
 /* --- Section Background Photos --- */
@@ -2527,7 +2637,8 @@ h4 { font-weight: 700; }
   .page-hero-grantmaking::after,
   .page-hero-press-forward::after,
   .page-hero-news-resources::after,
-  .page-hero-about-us::after {
+  .page-hero-about-us::after,
+  .page-hero-internship::after {
     opacity: 0.25;
     background-position: center top;
   }
@@ -2543,7 +2654,8 @@ h4 { font-weight: 700; }
   .page-hero-grantmaking::after,
   .page-hero-press-forward::after,
   .page-hero-news-resources::after,
-  .page-hero-about-us::after {
+  .page-hero-about-us::after,
+  .page-hero-internship::after {
     opacity: 0.23;
   }
 
