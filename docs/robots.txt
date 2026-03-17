@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madi-mccool.github.io/njcivicinfo/sitemap.xml

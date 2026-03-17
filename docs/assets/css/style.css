@@ -2466,7 +2466,7 @@ h4 { font-weight: 700; }
 }
 
 .page-hero-what-we-do::after {
-  background-image: url('../images/what%20we%20do-header.png');
+  background-image: url('../images/what-we-do-header.png');
 }
 
 .page-hero-grantmaking::after {
@@ -2474,15 +2474,15 @@ h4 { font-weight: 700; }
 }
 
 .page-hero-press-forward::after {
-  background-image: url('../images/press%20forward%20new%20jersey-header.png');
+  background-image: url('../images/press-forward-new-jersey-header.png');
 }
 
 .page-hero-news-resources::after {
-  background-image: url('../images/news%20%26%20resources-header.png');
+  background-image: url('../images/news-resources-header.png');
 }
 
 .page-hero-about-us::after {
-  background-image: url('../images/about%20us-header.png');
+  background-image: url('../images/about-us-header.png');
 }
 
 .page-hero-internship::after {
@@ -2618,7 +2618,7 @@ h4 { font-weight: 700; }
 }
 
 .section-bg-what-we-do::after {
-  background-image: url('../images/what%20we%20do-section.png');
+  background-image: url('../images/what-we-do-section.png');
 }
 
 .section-bg-grantmaking::after {

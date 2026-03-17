@@ -48,54 +48,24 @@ description: "Meet the staff and board of the NJ Civic Information Consortium, a
     </div>
 
     <div class="team-grid">
+      {% for member in site.data.staff %}
       <div class="team-card">
         <div class="team-photo">
-          <img src="{{ '/assets/images/Lisa.png' | relative_url }}" alt="Lisa Sahulka">
+          <img src="{{ ‘/assets/images/’ | append: member.photo | relative_url }}" alt="{{ member.name }}">
         </div>
-        <h3>Lisa Sahulka</h3>
-        <span class="team-title">Executive Director</span>
+        <h3>{{ member.name }}</h3>
+        <span class="team-title">{{ member.title }}</span>
         <div class="expand-item">
           <button class="expand-toggle" aria-expanded="false">
             <div class="expand-header"><span>View Bio</span></div>
             <span class="expand-icon">+</span>
           </button>
           <div class="expand-content">
-            <p>Lisa brings decades of experience leading mission-driven organizations. She previously served as COO at The Century Foundation and Southern Poverty Law Center, and as CFO for the Juvenile Welfare Board of Pinellas County, Florida. She has held leadership roles with CARE, Covenant House, and Jacob Riis Settlement House.</p>
+            <p>{{ member.bio }}</p>
           </div>
         </div>
       </div>
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="{{ '/assets/images/Ayinde.png' | relative_url }}" alt="Ayinde Merrill">
-        </div>
-        <h3>Ayinde Merrill</h3>
-        <span class="team-title">Program Officer</span>
-        <div class="expand-item">
-          <button class="expand-toggle" aria-expanded="false">
-            <div class="expand-header"><span>View Bio</span></div>
-            <span class="expand-icon">+</span>
-          </button>
-          <div class="expand-content">
-            <p>A lifelong Camden resident and activist, Ayinde founded Watu Moja, connecting African American and Afro-Latino young adults to the global African community through arts and service. He holds a bachelor's in Afrikan Studies from Rutgers and a master's in Public Administration from the University of Pennsylvania.</p>
-          </div>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo">
-          <img src="{{ '/assets/images/Madi.png' | relative_url }}" alt="Madison McCool">
-        </div>
-        <h3>Madison McCool</h3>
-        <span class="team-title">Grants + Communications Manager</span>
-        <div class="expand-item">
-          <button class="expand-toggle" aria-expanded="false">
-            <div class="expand-header"><span>View Bio</span></div>
-            <span class="expand-icon">+</span>
-          </button>
-          <div class="expand-content">
-            <p>Madison (Madi) serves as the Grants and Communications Manager for the Consortium, where she leads the organization’s communications strategy, supports the administration of grant programs, and manages back-office support. With a background in office management and communications, Madi plays a key role in connecting the Consortium’s work with stakeholders including journalists, policymakers, universities, and community partners. </p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -109,88 +79,14 @@ description: "Meet the staff and board of the NJ Civic Information Consortium, a
     </div>
 
     <div class="board-grid">
+      {% for member in site.data.board %}
       <div class="board-member">
-        <span class="board-name">Christopher J. Daggett</span>
-        <span class="board-title">Chairperson, 2025</span>
-        <span class="board-appointment">Independent Consultant</span>
+        <span class="board-name">{{ member.name }}</span>
+        <span class="board-title">{{ member.title }}</span>
+        {% if member.role %}<span class="board-title">{{ member.role }}</span>{% endif %}
+        <span class="board-appointment">{{ member.appointment }}</span>
       </div>
-      <div class="board-member">
-        <span class="board-name">Molly de Aguiar</span>
-        <span class="board-title">Treasurer</span>
-        <span class="board-title">President, Independence Public Media Foundation</span>
-        <span class="board-appointment">State Assembly Speaker Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Therise Edwards</span>
-        <span class="board-title">Vice Chairperson</span>
-        <span class="board-title">President, Teshly Solutions LLC</span>
-        <span class="board-appointment">Public Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Brian T. Murray</span>
-        <span class="board-title">Assistant County Administrator, Morris County Government</span>
-        <span class="board-appointment">State Senate Minority Leader Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Kevin Belfield</span>
-        <span class="board-title">Dean, College of Science and Liberal Arts</span>
-        <span class="board-appointment">New Jersey Institute of Technology Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Matthew Weber</span>
-        <span class="board-title">Professor of Communication, Rutgers School of Communication and Information</span>
-        <span class="board-appointment">Rutgers University Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Carrie Brown</span>
-        <span class="board-title">Associate Professor of Journalism</span>
-        <span class="board-appointment">Montclair State University Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Jerome Montes</span>
-        <span class="board-title">Dir. of Outreach, Communications, and Marketing, NJ Citizen Action</span>
-        <span class="board-appointment">Governor Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">David Wildstein</span>
-        <span class="board-title">Editor, NJ Globe</span>
-        <span class="board-appointment">State Senate President Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Kim Pearson</span>
-        <span class="board-title">Associate Professor of Journalism and Professional Writing, Retired</span>
-        <span class="board-appointment">The College of New Jersey Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Carl Hausman</span>
-        <span class="board-title">Professor of Journalism</span>
-        <span class="board-appointment">Rowan University Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Marisol M. Peron</span>
-        <span class="board-title">Senior VP, Global Investor Relations & Comms, Genmab US, Inc</span>
-        <span class="board-appointment">Board - Technology Sector Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Natalie Hamilton</span>
-        <span class="board-title">Director of Communications, FIFA World Cup 2026™ NYNJ</span>
-        <span class="board-appointment">Governor Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Audrey Kelly</span>
-        <span class="board-title">Executive Director, Kean University Board of Trustees</span>
-        <span class="board-appointment">Kean University Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Robin Wilson-Glover</span>
-        <span class="board-title">Director Digital Opinion, NJ Advance Media, Retired</span>
-        <span class="board-appointment">Board - Media Sector Appointment</span>
-      </div>
-      <div class="board-member">
-        <span class="board-name">Laura Marie Ali</span>
-        <span class="board-title">Chair of Chairs of the GOP</span>
-        <span class="board-appointment">State Assembly Minority Leader Appointment</span>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
