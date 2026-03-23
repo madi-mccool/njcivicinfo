@@ -224,6 +224,19 @@ h4 { font-weight: 700; }
   transform: translateY(-3px);
 }
 
+.btn-outline-dark {
+  background: transparent;
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+.btn-outline-dark:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 33, 71, 0.2);
+}
+
 .btn-text {
   background: none;
   color: var(--color-navy);
