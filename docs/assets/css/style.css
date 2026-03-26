@@ -3439,3 +3439,515 @@ p { font-size: inherit !important; }
     font-size: 22px;
   }
 }
+
+/* ============================================
+   ADVOCACY / FUND LOCAL NEWS PAGE
+   ============================================ */
+
+/* Hero variant */
+.page-hero-advocacy {
+  padding: 100px 0 80px;
+}
+
+.page-hero-advocacy .page-hero-subtitle {
+  max-width: 760px;
+}
+
+/* Sticky anchor navigation */
+.advocacy-nav {
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.advocacy-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  justify-content: center;
+}
+
+.advocacy-nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.advocacy-nav-links li a {
+  display: block;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-navy);
+  white-space: nowrap;
+  transition: var(--transition);
+  border-bottom: 3px solid transparent;
+}
+
+.advocacy-nav-links li a:hover {
+  color: var(--color-teal);
+  border-bottom-color: var(--color-teal);
+}
+
+/* Statement preview card */
+.advocacy-statement-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--color-offwhite);
+  border-radius: var(--radius);
+  padding: 48px 48px 40px;
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Two-column layout for stakes */
+.advocacy-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.advocacy-bullet-list {
+  list-style: none;
+  padding: 0;
+}
+
+.advocacy-bullet-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+.advocacy-bullet-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  background: var(--color-orange);
+  border-radius: 50%;
+}
+
+/* Callout box */
+.advocacy-callout-box {
+  background: var(--color-navy);
+  border-radius: var(--radius);
+  padding: 36px 32px;
+}
+
+.advocacy-callout-box h3 {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.advocacy-impact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.advocacy-impact-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.advocacy-impact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.advocacy-impact-list li i {
+  color: var(--color-teal);
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Proof points grid (hover cards) */
+.advocacy-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.advocacy-proof-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.advocacy-proof-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-teal);
+}
+
+.advocacy-proof-number {
+  width: 44px;
+  height: 44px;
+  background: var(--color-navy);
+  color: var(--color-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.advocacy-proof-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--color-navy);
+}
+
+.advocacy-proof-card p {
+  font-size: 15px;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+/* About text */
+.advocacy-about-text {
+  max-width: 800px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.advocacy-about-text p {
+  font-size: 17px;
+  color: var(--color-gray-600);
+  line-height: 1.8;
+}
+
+/* Quick facts grid */
+.advocacy-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.advocacy-fact-card {
+  text-align: center;
+  padding: 32px 16px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.advocacy-fact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-teal);
+}
+
+.advocacy-fact-number {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--color-navy);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.advocacy-fact-label {
+  font-size: 14px;
+  color: var(--color-gray-600);
+  font-weight: 600;
+}
+
+/* Timeline */
+.advocacy-timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 60px;
+}
+
+.advocacy-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-gray-200);
+  border-radius: 2px;
+}
+
+.advocacy-timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.advocacy-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.advocacy-timeline-marker {
+  position: absolute;
+  left: -60px;
+  width: 48px;
+  height: 48px;
+  background: var(--color-navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.advocacy-timeline-marker i {
+  color: var(--color-teal);
+  font-size: 18px;
+}
+
+.advocacy-timeline-content h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 4px;
+}
+
+.advocacy-timeline-content p {
+  font-size: 15px;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+}
+
+/* Action cards */
+.advocacy-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.advocacy-action-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.advocacy-action-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-teal);
+}
+
+.advocacy-action-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.advocacy-action-icon i {
+  color: var(--color-teal);
+  font-size: 22px;
+}
+
+.advocacy-action-card h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 10px;
+}
+
+.advocacy-action-card p {
+  font-size: 15px;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+.advocacy-action-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Resources grid */
+.advocacy-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.advocacy-resource-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--color-offwhite);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-gray-200);
+  transition: var(--transition);
+}
+
+.advocacy-resource-item:hover {
+  border-color: var(--color-teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.advocacy-resource-item i {
+  color: var(--color-navy);
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.advocacy-resource-item span {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+/* Contact cards */
+.advocacy-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.advocacy-contact-card {
+  text-align: center;
+  padding: 36px 28px;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.advocacy-contact-card i {
+  font-size: 28px;
+  color: var(--color-teal);
+  margin-bottom: 16px;
+}
+
+.advocacy-contact-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.advocacy-contact-card p {
+  font-size: 15px;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+/* Advocacy page responsive */
+@media (max-width: 1024px) {
+  .advocacy-proof-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advocacy-facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .advocacy-two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .advocacy-proof-grid {
+    grid-template-columns: 1fr;
+  }
+  .advocacy-action-grid {
+    grid-template-columns: 1fr;
+  }
+  .advocacy-resources-grid {
+    grid-template-columns: 1fr;
+  }
+  .advocacy-contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .advocacy-facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advocacy-nav-links {
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+  .advocacy-nav-links li a {
+    padding: 14px 14px;
+    font-size: 13px;
+  }
+  .advocacy-statement-card {
+    padding: 32px 24px;
+  }
+  .advocacy-timeline {
+    padding-left: 50px;
+  }
+  .advocacy-timeline::before {
+    left: 18px;
+  }
+  .advocacy-timeline-marker {
+    left: -50px;
+    width: 40px;
+    height: 40px;
+  }
+  .advocacy-timeline-marker i {
+    font-size: 16px;
+  }
+  .advocacy-action-buttons {
+    flex-direction: column;
+  }
+  .page-hero-advocacy {
+    padding: 80px 0 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advocacy-facts-grid {
+    grid-template-columns: 1fr;
+  }
+  .advocacy-fact-number {
+    font-size: 30px;
+  }
+}
