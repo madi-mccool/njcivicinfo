@@ -3455,8 +3455,8 @@ p { font-size: inherit !important; }
 
 /* Sticky anchor navigation */
 .advocacy-nav {
-  background: #d2c8d2;
-  border-bottom: 1px solid #d2c8d2;
+  background: #2DC8D2;
+  border-bottom: 1px solid #2DC8D2;
   position: sticky;
   top: var(--nav-height);
   z-index: 100;
