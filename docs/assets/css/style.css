@@ -3455,8 +3455,8 @@ p { font-size: inherit !important; }
 
 /* Sticky anchor navigation */
 .advocacy-nav {
-  background: var(--color-white);
-  border-bottom: 1px solid var(--color-gray-200);
+  background: #d2c8d2;
+  border-bottom: 1px solid #d2c8d2;
   position: sticky;
   top: var(--nav-height);
   z-index: 100;
@@ -3482,15 +3482,15 @@ p { font-size: inherit !important; }
   padding: 16px 20px;
   font-size: 14px;
   font-weight: 700;
-  color: var(--color-navy);
+  color: #FFFFFF;
   white-space: nowrap;
   transition: var(--transition);
   border-bottom: 3px solid transparent;
 }
 
 .advocacy-nav-links li a:hover {
-  color: var(--color-teal);
-  border-bottom-color: var(--color-teal);
+  color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
 }
 
 /* Statement preview card */
