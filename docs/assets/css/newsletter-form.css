@@ -82,14 +82,17 @@
 
 
 /* -----------------------------------------------
-   2. FORM TITLE & DESCRIPTION
-   ActionTag: .at-markup (rich text/title blocks),
-   .at-subtitle (subtitle text)
+   2. FORM TITLE, OPEN GRAPH TITLE & DESCRIPTION
+   ActionTag: .at-title (form title heading),
+   .at-markup (OG description / rich text blocks),
+   .at-subtitle (OG title / subtitle text)
    ----------------------------------------------- */
 
+/* Form Title — Blue (navy) */
 .at h1,
 .at h2,
-.at h3 {
+.at h3,
+.at .at-title {
   font-family: var(--njcic-font) !important;
   font-weight: 800 !important;
   line-height: 1.2 !important;
@@ -102,21 +105,24 @@
   margin-bottom: 8px !important;
 }
 
-.at .at-markup {
-  font-family: var(--njcic-font) !important;
-  text-align: center;
-  margin-bottom: 16px !important;
-  color: var(--njcic-gray-600);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
+/* Open Graph Title — Blue (navy) */
 .at .at-subtitle {
   font-family: var(--njcic-font) !important;
-  color: var(--njcic-gray-600) !important;
+  color: var(--njcic-navy) !important;
   font-size: 15px !important;
+  font-weight: 700 !important;
   text-align: center;
   margin-bottom: 24px !important;
+}
+
+/* Open Graph Description — Mulish font at our body size */
+.at .at-markup {
+  font-family: var(--njcic-font) !important;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  color: var(--njcic-gray-600);
+  text-align: center;
+  margin-bottom: 16px !important;
 }
 
 
