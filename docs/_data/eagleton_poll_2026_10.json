@@ -1,0 +1,7781 @@
+{
+ "source": "Rutgers-Eagleton Poll, commissioned by the New Jersey Civic Information Consortium. Released Oct. 20, 2026. 1,004 NJ adults, Sept. 24-27, 2026. MOE +/-4.1 points. <1% values are stored as 0.5.",
+ "questions": [
+  {
+   "id": "CIC1",
+   "text": "Overall, how well do you feel local news in your area keeps you informed of the most important stories and issues of the day?",
+   "item": null,
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very well",
+     "pct": 9
+    },
+    {
+     "label": "Somewhat well",
+     "pct": 50
+    },
+    {
+     "label": "Not very well",
+     "pct": 24
+    },
+    {
+     "label": "Not well at all",
+     "pct": 10
+    },
+    {
+     "label": "Don't know",
+     "pct": 8
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 12,
+        "Somewhat": 48,
+        "Not very": 24,
+        "Not at all": 8,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 7,
+        "Somewhat": 51,
+        "Not very": 25,
+        "Not at all": 8,
+        "Don't know": 9
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 8,
+        "Somewhat": 51,
+        "Not very": 22,
+        "Not at all": 15,
+        "Don't know": 4
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 7,
+        "Somewhat": 50,
+        "Not very": 27,
+        "Not at all": 10,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 10,
+        "Somewhat": 50,
+        "Not very": 21,
+        "Not at all": 10,
+        "Don't know": 9
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 7,
+        "Somewhat": 53,
+        "Not very": 22,
+        "Not at all": 11,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 6,
+        "Somewhat": 54,
+        "Not very": 22,
+        "Not at all": 10,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 16,
+        "Somewhat": 35,
+        "Not very": 32,
+        "Not at all": 7,
+        "Don't know": 9
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 9,
+        "Somewhat": 51,
+        "Not very": 23,
+        "Not at all": 9,
+        "Don't know": 8
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 3,
+        "Somewhat": 50,
+        "Not very": 28,
+        "Not at all": 6,
+        "Don't know": 14
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 11,
+        "Somewhat": 48,
+        "Not very": 25,
+        "Not at all": 8,
+        "Don't know": 9
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 12,
+        "Somewhat": 44,
+        "Not very": 27,
+        "Not at all": 13,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 9,
+        "Somewhat": 58,
+        "Not very": 17,
+        "Not at all": 12,
+        "Don't know": 5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 9,
+        "Somewhat": 47,
+        "Not very": 25,
+        "Not at all": 11,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 9,
+        "Somewhat": 54,
+        "Not very": 19,
+        "Not at all": 10,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 10,
+        "Somewhat": 52,
+        "Not very": 26,
+        "Not at all": 8,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 8,
+        "Somewhat": 46,
+        "Not very": 27,
+        "Not at all": 10,
+        "Don't know": 9
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 10,
+        "Somewhat": 53,
+        "Not very": 25,
+        "Not at all": 6,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 7,
+        "Somewhat": 51,
+        "Not very": 22,
+        "Not at all": 10,
+        "Don't know": 11
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 8,
+        "Somewhat": 48,
+        "Not very": 22,
+        "Not at all": 11,
+        "Don't know": 10
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 13,
+        "Somewhat": 43,
+        "Not very": 26,
+        "Not at all": 12,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 8,
+        "Somewhat": 53,
+        "Not very": 27,
+        "Not at all": 9,
+        "Don't know": 2
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 9,
+        "Somewhat": 48,
+        "Not very": 25,
+        "Not at all": 10,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 9,
+        "Somewhat": 47,
+        "Not very": 29,
+        "Not at all": 8,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 12,
+        "Somewhat": 47,
+        "Not very": 21,
+        "Not at all": 13,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 6,
+        "Somewhat": 57,
+        "Not very": 20,
+        "Not at all": 8,
+        "Don't know": 9
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Local taxes and how public money is spent",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 74
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 21
+    },
+    {
+     "label": "Not too important",
+     "pct": 3
+    },
+    {
+     "label": "Not at all important",
+     "pct": 1
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 24,
+        "Not too": 4,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 74,
+        "Somewhat": 21,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 79,
+        "Somewhat": 16,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 75,
+        "Somewhat": 22,
+        "Not too": 3,
+        "Not at all": 0.5,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 73,
+        "Somewhat": 20,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 78,
+        "Somewhat": 19,
+        "Not too": 1,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 75,
+        "Somewhat": 17,
+        "Not too": 4,
+        "Not at all": 0,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 71,
+        "Somewhat": 21,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 58,
+        "Somewhat": 32,
+        "Not too": 8,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 28,
+        "Not too": 8,
+        "Not at all": 0.5,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 73,
+        "Somewhat": 20,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 80,
+        "Somewhat": 17,
+        "Not too": 1,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 80,
+        "Somewhat": 19,
+        "Not too": 0.5,
+        "Not at all": 0,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 20,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 74,
+        "Somewhat": 22,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 76,
+        "Somewhat": 20,
+        "Not too": 3,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 76,
+        "Somewhat": 21,
+        "Not too": 3,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 23,
+        "Not too": 5,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 23,
+        "Not too": 4,
+        "Not at all": 2,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 81,
+        "Somewhat": 18,
+        "Not too": 1,
+        "Not at all": 0,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 75,
+        "Somewhat": 22,
+        "Not too": 1,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 81,
+        "Somewhat": 17,
+        "Not too": 1,
+        "Not at all": 0.5,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 23,
+        "Not too": 3,
+        "Not at all": 0,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 77,
+        "Somewhat": 17,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 23,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 76,
+        "Somewhat": 20,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Decisions made by your municipal government",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 66
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 27
+    },
+    {
+     "label": "Not too important",
+     "pct": 4
+    },
+    {
+     "label": "Not at all important",
+     "pct": 1
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 67,
+        "Somewhat": 25,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 30,
+        "Not too": 4,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 26,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 29,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 26,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 4
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 28,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 71,
+        "Somewhat": 18,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 22,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 49,
+        "Somewhat": 39,
+        "Not too": 7,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 31,
+        "Not too": 11,
+        "Not at all": 1,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 62,
+        "Somewhat": 31,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 24,
+        "Not too": 1,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 76,
+        "Somewhat": 23,
+        "Not too": 1,
+        "Not at all": 0,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 27,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 24,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 71,
+        "Somewhat": 25,
+        "Not too": 3,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 33,
+        "Not too": 1,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 67,
+        "Somewhat": 25,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 58,
+        "Somewhat": 29,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 27,
+        "Not too": 0.5,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 30,
+        "Not too": 1,
+        "Not at all": 0.5,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 73,
+        "Somewhat": 22,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 24,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 28,
+        "Not too": 7,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 33,
+        "Not too": 3,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 26,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Public schools and school board decisions",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 51
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 31
+    },
+    {
+     "label": "Not too important",
+     "pct": 11
+    },
+    {
+     "label": "Not at all important",
+     "pct": 4
+    },
+    {
+     "label": "Don't know",
+     "pct": 3
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 30,
+        "Not too": 11,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 49,
+        "Somewhat": 28,
+        "Not too": 13,
+        "Not at all": 6,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 49,
+        "Somewhat": 36,
+        "Not too": 7,
+        "Not at all": 6,
+        "Don't know": 2
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 48,
+        "Somewhat": 32,
+        "Not too": 13,
+        "Not at all": 5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 29,
+        "Not too": 9,
+        "Not at all": 4,
+        "Don't know": 4
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 51,
+        "Somewhat": 32,
+        "Not too": 10,
+        "Not at all": 4,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 28,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 24,
+        "Not too": 13,
+        "Not at all": 4,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 40,
+        "Somewhat": 33,
+        "Not too": 18,
+        "Not at all": 8,
+        "Don't know": 2
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 49,
+        "Somewhat": 27,
+        "Not too": 15,
+        "Not at all": 5,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 58,
+        "Somewhat": 32,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 56,
+        "Somewhat": 25,
+        "Not too": 10,
+        "Not at all": 6,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 42,
+        "Somewhat": 38,
+        "Not too": 13,
+        "Not at all": 5,
+        "Don't know": 2
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 48,
+        "Somewhat": 24,
+        "Not too": 14,
+        "Not at all": 7,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 47,
+        "Somewhat": 36,
+        "Not too": 11,
+        "Not at all": 4,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 32,
+        "Not too": 8,
+        "Not at all": 4,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 57,
+        "Somewhat": 28,
+        "Not too": 11,
+        "Not at all": 3,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 32,
+        "Not too": 11,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 46,
+        "Somewhat": 27,
+        "Not too": 15,
+        "Not at all": 4,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 33,
+        "Not too": 9,
+        "Not at all": 5,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 58,
+        "Somewhat": 31,
+        "Not too": 4,
+        "Not at all": 5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 50,
+        "Somewhat": 33,
+        "Not too": 10,
+        "Not at all": 6,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 45,
+        "Somewhat": 31,
+        "Not too": 12,
+        "Not at all": 7,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 51,
+        "Somewhat": 32,
+        "Not too": 10,
+        "Not at all": 3,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 29,
+        "Not too": 14,
+        "Not at all": 4,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 57,
+        "Somewhat": 30,
+        "Not too": 7,
+        "Not at all": 4,
+        "Don't know": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Public safety and emergency information",
+   "base": 1003,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 77
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 18
+    },
+    {
+     "label": "Not too important",
+     "pct": 3
+    },
+    {
+     "label": "Not at all important",
+     "pct": 1
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 436,
+       "vals": {
+        "Very": 79,
+        "Somewhat": 15,
+        "Not too": 4,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 23,
+        "Not too": 3,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 82,
+        "Somewhat": 14,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 74,
+        "Somewhat": 21,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 579,
+       "vals": {
+        "Very": 80,
+        "Somewhat": 14,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 81,
+        "Somewhat": 15,
+        "Not too": 1,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Black",
+       "n": 123,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 24,
+        "Not too": 5,
+        "Not at all": 0,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 74,
+        "Somewhat": 19,
+        "Not too": 5,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 22,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 227,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 24,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 23,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 86,
+        "Somewhat": 11,
+        "Not too": 2,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 86,
+        "Somewhat": 13,
+        "Not too": 0.5,
+        "Not at all": 0.5,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 245,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 23,
+        "Not too": 4,
+        "Not at all": 0.5,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 80,
+        "Somewhat": 14,
+        "Not too": 3,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 86,
+        "Somewhat": 12,
+        "Not too": 1,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 75,
+        "Somewhat": 21,
+        "Not too": 4,
+        "Not at all": 0,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 27,
+        "Not too": 3,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 17,
+        "Not too": 5,
+        "Not at all": 1,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 162,
+       "vals": {
+        "Very": 85,
+        "Somewhat": 14,
+        "Not too": 1,
+        "Not at all": 0,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 81,
+        "Somewhat": 17,
+        "Not too": 1,
+        "Not at all": 0.5,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 85,
+        "Somewhat": 12,
+        "Not too": 3,
+        "Not at all": 0,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 74,
+        "Somewhat": 18,
+        "Not too": 5,
+        "Not at all": 0,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 205,
+       "vals": {
+        "Very": 79,
+        "Somewhat": 17,
+        "Not too": 2,
+        "Not at all": 0.5,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 78,
+        "Somewhat": 17,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 78,
+        "Somewhat": 19,
+        "Not too": 2,
+        "Not at all": 0.5,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Housing, zoning, and development",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 53
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 37
+    },
+    {
+     "label": "Not too important",
+     "pct": 8
+    },
+    {
+     "label": "Not at all important",
+     "pct": 1
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 55,
+        "Somewhat": 34,
+        "Not too": 8,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 34,
+        "Not too": 8,
+        "Not at all": 0.5,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 47,
+        "Somewhat": 44,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 39,
+        "Not too": 8,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 35,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 39,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 20,
+        "Not too": 9,
+        "Not at all": 3,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 30,
+        "Not too": 6,
+        "Not at all": 0.5,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 38,
+        "Somewhat": 48,
+        "Not too": 12,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 47,
+        "Somewhat": 38,
+        "Not too": 9,
+        "Not at all": 3,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 53,
+        "Somewhat": 35,
+        "Not too": 9,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 31,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 51,
+        "Somewhat": 42,
+        "Not too": 7,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 50,
+        "Somewhat": 35,
+        "Not too": 8,
+        "Not at all": 2,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 50,
+        "Somewhat": 36,
+        "Not too": 11,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 58,
+        "Somewhat": 35,
+        "Not too": 5,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 55,
+        "Somewhat": 39,
+        "Not too": 6,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 56,
+        "Somewhat": 35,
+        "Not too": 9,
+        "Not at all": 0,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 51,
+        "Somewhat": 34,
+        "Not too": 9,
+        "Not at all": 2,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 59,
+        "Somewhat": 34,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 50,
+        "Somewhat": 41,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 41,
+        "Not too": 7,
+        "Not at all": 0,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 34,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 50,
+        "Somewhat": 39,
+        "Not too": 10,
+        "Not at all": 0.5,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 52,
+        "Somewhat": 36,
+        "Not too": 9,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 55,
+        "Somewhat": 38,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Roads, transportation, and infrastructure",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 65
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 30
+    },
+    {
+     "label": "Not too important",
+     "pct": 3
+    },
+    {
+     "label": "Not at all important",
+     "pct": 1
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 27,
+        "Not too": 3,
+        "Not at all": 0.5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 32,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 30,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 64,
+        "Somewhat": 32,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 28,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 31,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 73,
+        "Somewhat": 18,
+        "Not too": 6,
+        "Not at all": 0.5,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 25,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 55,
+        "Somewhat": 40,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 57,
+        "Somewhat": 31,
+        "Not too": 8,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 29,
+        "Not too": 1,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 71,
+        "Somewhat": 26,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 64,
+        "Somewhat": 33,
+        "Not too": 2,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 27,
+        "Not too": 6,
+        "Not at all": 0,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 28,
+        "Not too": 4,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 28,
+        "Not too": 2,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 64,
+        "Somewhat": 34,
+        "Not too": 1,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 29,
+        "Not too": 6,
+        "Not at all": 0,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 31,
+        "Not too": 3,
+        "Not at all": 2,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 28,
+        "Not too": 1,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 27,
+        "Not too": 3,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 31,
+        "Not too": 4,
+        "Not at all": 0,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 62,
+        "Somewhat": 30,
+        "Not too": 4,
+        "Not at all": 0,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 35,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 29,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 26,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Public health and environmental conditions",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 68
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 24
+    },
+    {
+     "label": "Not too important",
+     "pct": 4
+    },
+    {
+     "label": "Not at all important",
+     "pct": 2
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 73,
+        "Somewhat": 19,
+        "Not too": 6,
+        "Not at all": 0,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 65,
+        "Somewhat": 27,
+        "Not too": 4,
+        "Not at all": 3,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 29,
+        "Not too": 2,
+        "Not at all": 3,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 67,
+        "Somewhat": 25,
+        "Not too": 4,
+        "Not at all": 3,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 23,
+        "Not too": 5,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 24,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 69,
+        "Somewhat": 22,
+        "Not too": 6,
+        "Not at all": 0,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 62,
+        "Somewhat": 30,
+        "Not too": 2,
+        "Not at all": 4,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 20,
+        "Not too": 10,
+        "Not at all": 3,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 27,
+        "Not too": 7,
+        "Not at all": 4,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 27,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 23,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 76,
+        "Somewhat": 20,
+        "Not too": 3,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 24,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 22,
+        "Not too": 3,
+        "Not at all": 3,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 71,
+        "Somewhat": 24,
+        "Not too": 4,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 67,
+        "Somewhat": 26,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 28,
+        "Not too": 10,
+        "Not at all": 0,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 62,
+        "Somewhat": 26,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 76,
+        "Somewhat": 17,
+        "Not too": 4,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 74,
+        "Somewhat": 22,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 24,
+        "Not too": 2,
+        "Not at all": 2,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 29,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 23,
+        "Not too": 5,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 71,
+        "Somewhat": 23,
+        "Not too": 4,
+        "Not at all": 2,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 73,
+        "Somewhat": 21,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Local elections and candidates",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 61
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 30
+    },
+    {
+     "label": "Not too important",
+     "pct": 6
+    },
+    {
+     "label": "Not at all important",
+     "pct": 1
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 64,
+        "Somewhat": 29,
+        "Not too": 4,
+        "Not at all": 0.5,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 56,
+        "Somewhat": 32,
+        "Not too": 8,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 64,
+        "Somewhat": 27,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 30,
+        "Not too": 6,
+        "Not at all": 2,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 29,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 63,
+        "Somewhat": 31,
+        "Not too": 5,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 75,
+        "Somewhat": 14,
+        "Not too": 5,
+        "Not at all": 1,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 54,
+        "Somewhat": 29,
+        "Not too": 11,
+        "Not at all": 4,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 49,
+        "Somewhat": 39,
+        "Not too": 9,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 47,
+        "Somewhat": 32,
+        "Not too": 14,
+        "Not at all": 3,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 58,
+        "Somewhat": 34,
+        "Not too": 5,
+        "Not at all": 1,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 66,
+        "Somewhat": 27,
+        "Not too": 5,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 70,
+        "Somewhat": 27,
+        "Not too": 2,
+        "Not at all": 1,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 56,
+        "Somewhat": 29,
+        "Not too": 8,
+        "Not at all": 1,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 29,
+        "Not too": 8,
+        "Not at all": 2,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 25,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 36,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 29,
+        "Not too": 9,
+        "Not at all": 1,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 53,
+        "Somewhat": 33,
+        "Not too": 7,
+        "Not at all": 2,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 72,
+        "Somewhat": 24,
+        "Not too": 3,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 68,
+        "Somewhat": 27,
+        "Not too": 4,
+        "Not at all": 1,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 61,
+        "Somewhat": 31,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 28,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 59,
+        "Somewhat": 28,
+        "Not too": 11,
+        "Not at all": 2,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 60,
+        "Somewhat": 33,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 64,
+        "Somewhat": 30,
+        "Not too": 4,
+        "Not at all": 2,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC2",
+   "text": "How important is it to you to have reliable information about each of the following in your local community?",
+   "item": "Community events, businesses, and services",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Very important",
+     "pct": 41
+    },
+    {
+     "label": "Somewhat important",
+     "pct": 44
+    },
+    {
+     "label": "Not too important",
+     "pct": 10
+    },
+    {
+     "label": "Not at all important",
+     "pct": 3
+    },
+    {
+     "label": "Don't know",
+     "pct": 2
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Very": 45,
+        "Somewhat": 40,
+        "Not too": 10,
+        "Not at all": 2,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Very": 41,
+        "Somewhat": 45,
+        "Not too": 9,
+        "Not at all": 3,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Very": 33,
+        "Somewhat": 50,
+        "Not too": 13,
+        "Not at all": 4,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Very": 38,
+        "Somewhat": 46,
+        "Not too": 12,
+        "Not at all": 3,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Very": 43,
+        "Somewhat": 43,
+        "Not too": 9,
+        "Not at all": 2,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Very": 39,
+        "Somewhat": 48,
+        "Not too": 10,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Very": 56,
+        "Somewhat": 26,
+        "Not too": 10,
+        "Not at all": 5,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Very": 42,
+        "Somewhat": 45,
+        "Not too": 6,
+        "Not at all": 5,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Very": 32,
+        "Somewhat": 43,
+        "Not too": 18,
+        "Not at all": 6,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Very": 39,
+        "Somewhat": 39,
+        "Not too": 11,
+        "Not at all": 8,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Very": 41,
+        "Somewhat": 46,
+        "Not too": 9,
+        "Not at all": 3,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Very": 42,
+        "Somewhat": 46,
+        "Not too": 10,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Very": 42,
+        "Somewhat": 47,
+        "Not too": 12,
+        "Not at all": 0.5,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Very": 37,
+        "Somewhat": 41,
+        "Not too": 12,
+        "Not at all": 5,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Very": 44,
+        "Somewhat": 44,
+        "Not too": 8,
+        "Not at all": 4,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Very": 45,
+        "Somewhat": 44,
+        "Not too": 9,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Very": 38,
+        "Somewhat": 47,
+        "Not too": 13,
+        "Not at all": 2,
+        "Don't know": 0
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Very": 39,
+        "Somewhat": 49,
+        "Not too": 11,
+        "Not at all": 0,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Very": 38,
+        "Somewhat": 42,
+        "Not too": 11,
+        "Not at all": 4,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Very": 47,
+        "Somewhat": 46,
+        "Not too": 6,
+        "Not at all": 1,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Very": 45,
+        "Somewhat": 45,
+        "Not too": 7,
+        "Not at all": 3,
+        "Don't know": 0
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Very": 38,
+        "Somewhat": 42,
+        "Not too": 14,
+        "Not at all": 5,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Very": 36,
+        "Somewhat": 44,
+        "Not too": 14,
+        "Not at all": 3,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Very": 41,
+        "Somewhat": 44,
+        "Not too": 10,
+        "Not at all": 5,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Very": 47,
+        "Somewhat": 39,
+        "Not too": 10,
+        "Not at all": 3,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Very": 41,
+        "Somewhat": 49,
+        "Not too": 7,
+        "Not at all": 1,
+        "Don't know": 1
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC3",
+   "text": "Do you think there are...",
+   "item": null,
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Too many local news sources in your area",
+     "pct": 5
+    },
+    {
+     "label": "Just the right amount of local news sources in your area",
+     "pct": 40
+    },
+    {
+     "label": "Not enough local news sources in your area",
+     "pct": 42
+    },
+    {
+     "label": "Don't know",
+     "pct": 13
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Too many": 4,
+        "Just right": 36,
+        "Not enough": 49,
+        "Don't know": 11
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Too many": 5,
+        "Just right": 42,
+        "Not enough": 36,
+        "Don't know": 18
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Too many": 9,
+        "Just right": 42,
+        "Not enough": 41,
+        "Don't know": 8
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Too many": 8,
+        "Just right": 43,
+        "Not enough": 36,
+        "Don't know": 13
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Too many": 3,
+        "Just right": 37,
+        "Not enough": 47,
+        "Don't know": 13
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Too many": 5,
+        "Just right": 39,
+        "Not enough": 44,
+        "Don't know": 12
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Too many": 7,
+        "Just right": 37,
+        "Not enough": 47,
+        "Don't know": 9
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Too many": 6,
+        "Just right": 37,
+        "Not enough": 39,
+        "Don't know": 17
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Too many": 4,
+        "Just right": 48,
+        "Not enough": 32,
+        "Don't know": 16
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Too many": 7,
+        "Just right": 40,
+        "Not enough": 32,
+        "Don't know": 21
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Too many": 5,
+        "Just right": 43,
+        "Not enough": 42,
+        "Don't know": 10
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Too many": 7,
+        "Just right": 39,
+        "Not enough": 44,
+        "Don't know": 10
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Too many": 2,
+        "Just right": 36,
+        "Not enough": 50,
+        "Don't know": 12
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Too many": 8,
+        "Just right": 30,
+        "Not enough": 45,
+        "Don't know": 17
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Too many": 2,
+        "Just right": 46,
+        "Not enough": 39,
+        "Don't know": 13
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Too many": 4,
+        "Just right": 38,
+        "Not enough": 45,
+        "Don't know": 14
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Too many": 7,
+        "Just right": 42,
+        "Not enough": 41,
+        "Don't know": 10
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Too many": 7,
+        "Just right": 43,
+        "Not enough": 39,
+        "Don't know": 10
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Too many": 6,
+        "Just right": 39,
+        "Not enough": 39,
+        "Don't know": 16
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Too many": 1,
+        "Just right": 38,
+        "Not enough": 48,
+        "Don't know": 13
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Too many": 8,
+        "Just right": 40,
+        "Not enough": 38,
+        "Don't know": 15
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Too many": 2,
+        "Just right": 39,
+        "Not enough": 49,
+        "Don't know": 10
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Too many": 9,
+        "Just right": 35,
+        "Not enough": 38,
+        "Don't know": 18
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Too many": 4,
+        "Just right": 43,
+        "Not enough": 41,
+        "Don't know": 12
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Too many": 4,
+        "Just right": 43,
+        "Not enough": 41,
+        "Don't know": 12
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Too many": 4,
+        "Just right": 39,
+        "Not enough": 47,
+        "Don't know": 10
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC4",
+   "text": "In the past 12 months, have you looked for information about something happening in your local community?",
+   "item": null,
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Yes, and it was easy to find",
+     "pct": 43
+    },
+    {
+     "label": "Yes, but it was hard to find",
+     "pct": 36
+    },
+    {
+     "label": "No, I have not looked for that kind of information",
+     "pct": 19
+    },
+    {
+     "label": "Don't know",
+     "pct": 3
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Easy to find": 45,
+        "Hard to find": 35,
+        "No": 17,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Easy to find": 41,
+        "Hard to find": 38,
+        "No": 18,
+        "Don't know": 3
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Easy to find": 42,
+        "Hard to find": 35,
+        "No": 23,
+        "Don't know": 0.5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Easy to find": 46,
+        "Hard to find": 33,
+        "No": 19,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Easy to find": 40,
+        "Hard to find": 38,
+        "No": 18,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Easy to find": 42,
+        "Hard to find": 38,
+        "No": 17,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Easy to find": 40,
+        "Hard to find": 42,
+        "No": 14,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Easy to find": 42,
+        "Hard to find": 31,
+        "No": 28,
+        "Don't know": 0.5
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Easy to find": 49,
+        "Hard to find": 28,
+        "No": 18,
+        "Don't know": 5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Easy to find": 36,
+        "Hard to find": 37,
+        "No": 23,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Easy to find": 48,
+        "Hard to find": 32,
+        "No": 16,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Easy to find": 50,
+        "Hard to find": 31,
+        "No": 18,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Easy to find": 38,
+        "Hard to find": 44,
+        "No": 18,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Easy to find": 37,
+        "Hard to find": 32,
+        "No": 25,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Easy to find": 37,
+        "Hard to find": 42,
+        "No": 20,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Easy to find": 50,
+        "Hard to find": 33,
+        "No": 16,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Easy to find": 48,
+        "Hard to find": 36,
+        "No": 13,
+        "Don't know": 3
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Easy to find": 46,
+        "Hard to find": 36,
+        "No": 18,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Easy to find": 40,
+        "Hard to find": 38,
+        "No": 17,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Easy to find": 40,
+        "Hard to find": 39,
+        "No": 19,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Easy to find": 45,
+        "Hard to find": 31,
+        "No": 23,
+        "Don't know": 1
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Easy to find": 45,
+        "Hard to find": 38,
+        "No": 17,
+        "Don't know": 1
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Easy to find": 36,
+        "Hard to find": 34,
+        "No": 26,
+        "Don't know": 4
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Easy to find": 46,
+        "Hard to find": 34,
+        "No": 19,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Easy to find": 45,
+        "Hard to find": 32,
+        "No": 21,
+        "Don't know": 2
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Easy to find": 46,
+        "Hard to find": 44,
+        "No": 7,
+        "Don't know": 2
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Municipal government",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 25
+    },
+    {
+     "label": "Not selected",
+     "pct": 75
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 28,
+        "Not selected": 72
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 17,
+        "Not selected": 83
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 32,
+        "Not selected": 68
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 29,
+        "Not selected": 71
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 19,
+        "Not selected": 81
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "School board or local public schools",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 22
+    },
+    {
+     "label": "Not selected",
+     "pct": 78
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 22,
+        "Not selected": 78
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 19,
+        "Not selected": 81
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 24,
+        "Not selected": 76
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 43,
+        "Not selected": 57
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Property taxes or municipal spending",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 39
+    },
+    {
+     "label": "Not selected",
+     "pct": 61
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 45,
+        "Not selected": 55
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 40,
+        "Not selected": 60
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 35,
+        "Not selected": 65
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 42,
+        "Not selected": 58
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 44,
+        "Not selected": 56
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Housing, zoning, or development",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 33
+    },
+    {
+     "label": "Not selected",
+     "pct": 67
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 28,
+        "Not selected": 72
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 37,
+        "Not selected": 63
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 32,
+        "Not selected": 68
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Public safety",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 28
+    },
+    {
+     "label": "Not selected",
+     "pct": 72
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 24,
+        "Not selected": 76
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Transportation or infrastructure",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 25
+    },
+    {
+     "label": "Not selected",
+     "pct": 75
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 19,
+        "Not selected": 81
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 24,
+        "Not selected": 76
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 24,
+        "Not selected": 76
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 26,
+        "Not selected": 74
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 28,
+        "Not selected": 72
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Health or environmental issues",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 27
+    },
+    {
+     "label": "Not selected",
+     "pct": 73
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 26,
+        "Not selected": 74
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 22,
+        "Not selected": 78
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Elections or candidates",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 24
+    },
+    {
+     "label": "Not selected",
+     "pct": 76
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 22,
+        "Not selected": 78
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 26,
+        "Not selected": 74
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 28,
+        "Not selected": 72
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 26,
+        "Not selected": 74
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Community services",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 27
+    },
+    {
+     "label": "Not selected",
+     "pct": 73
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 23,
+        "Not selected": 77
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 18,
+        "Not selected": 82
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Local businesses or events",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 31
+    },
+    {
+     "label": "Not selected",
+     "pct": 69
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 29,
+        "Not selected": 71
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 35,
+        "Not selected": 65
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 25,
+        "Not selected": 75
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 152,
+       "vals": {
+        "Selected": 5,
+        "Not selected": 95
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 228,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Other",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 4
+    },
+    {
+     "label": "Not selected",
+     "pct": 96
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 5,
+        "Not selected": 95
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 4,
+        "Not selected": 96
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 4,
+        "Not selected": 96
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 5,
+        "Not selected": 95
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 5,
+        "Not selected": 95
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 7,
+        "Not selected": 93
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 447,
+       "vals": {
+        "Selected": 14,
+        "Not selected": 86
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 557,
+       "vals": {
+        "Selected": 22,
+        "Not selected": 78
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC5",
+   "text": "What kind of information was hard to find?",
+   "item": "Don't know",
+   "base": 380,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 2
+    },
+    {
+     "label": "Not selected",
+     "pct": 98
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 161,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 215,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 227,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "Non-white",
+       "n": 151,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-49",
+       "n": 192,
+       "vals": {
+        "Selected": 4,
+        "Not selected": 96
+       }
+      },
+      {
+       "label": "50+",
+       "n": 188,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $100K",
+       "n": 215,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      },
+      {
+       "label": "$100K+",
+       "n": 163,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "Some college or less",
+       "n": 447,
+       "vals": {
+        "Selected": 38,
+        "Not selected": 62
+       }
+      },
+      {
+       "label": "College degree or more",
+       "n": 557,
+       "vals": {
+        "Selected": 55,
+        "Not selected": 45
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "Attended or watched a municipal, county, or school board meeting",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 18
+    },
+    {
+     "label": "Not selected",
+     "pct": 82
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 19,
+        "Not selected": 81
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 16,
+        "Not selected": 84
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 18,
+        "Not selected": 82
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 9,
+        "Not selected": 91
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 13,
+        "Not selected": 87
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 18,
+        "Not selected": 82
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 16,
+        "Not selected": 84
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 16,
+        "Not selected": 84
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 16,
+        "Not selected": 84
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 16,
+        "Not selected": 84
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 24,
+        "Not selected": 76
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 14,
+        "Not selected": 86
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 22,
+        "Not selected": 78
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 14,
+        "Not selected": 86
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 14,
+        "Not selected": 86
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 17,
+        "Not selected": 83
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 26,
+        "Not selected": 74
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "Read a news report about a public meeting",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 46
+    },
+    {
+     "label": "Not selected",
+     "pct": 54
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 46,
+        "Not selected": 54
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 49,
+        "Not selected": 51
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 42,
+        "Not selected": 58
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 49,
+        "Not selected": 51
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 43,
+        "Not selected": 57
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 52,
+        "Not selected": 48
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 41,
+        "Not selected": 59
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 38,
+        "Not selected": 62
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 49,
+        "Not selected": 51
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 41,
+        "Not selected": 59
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 57,
+        "Not selected": 43
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 46,
+        "Not selected": 54
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 50,
+        "Not selected": 50
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 55,
+        "Not selected": 45
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 44,
+        "Not selected": 56
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 43,
+        "Not selected": 57
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 48,
+        "Not selected": 52
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 45,
+        "Not selected": 55
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 55,
+        "Not selected": 45
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 40,
+        "Not selected": 60
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 47,
+        "Not selected": 53
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 62,
+        "Not selected": 38
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "Contacted a local elected official",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 12
+    },
+    {
+     "label": "Not selected",
+     "pct": 88
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 13,
+        "Not selected": 87
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 8,
+        "Not selected": 92
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 9,
+        "Not selected": 91
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 9,
+        "Not selected": 91
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 17,
+        "Not selected": 83
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 17,
+        "Not selected": 83
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 10,
+        "Not selected": 90
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 16,
+        "Not selected": 84
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "Voted in a local or school board election",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 34
+    },
+    {
+     "label": "Not selected",
+     "pct": 66
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 37,
+        "Not selected": 63
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 29,
+        "Not selected": 71
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 40,
+        "Not selected": 60
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 32,
+        "Not selected": 68
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 37,
+        "Not selected": 63
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 42,
+        "Not selected": 58
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 18,
+        "Not selected": 82
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 35,
+        "Not selected": 65
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 52,
+        "Not selected": 48
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 22,
+        "Not selected": 78
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 36,
+        "Not selected": 64
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 39,
+        "Not selected": 61
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 40,
+        "Not selected": 60
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 20,
+        "Not selected": 80
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 35,
+        "Not selected": 65
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 41,
+        "Not selected": 59
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 42,
+        "Not selected": 58
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 29,
+        "Not selected": 71
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 43,
+        "Not selected": 57
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "Commented on a local proposal or public decision",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 10
+    },
+    {
+     "label": "Not selected",
+     "pct": 90
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 10,
+        "Not selected": 90
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 9,
+        "Not selected": 91
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 8,
+        "Not selected": 92
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 13,
+        "Not selected": 87
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 5,
+        "Not selected": 95
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 5,
+        "Not selected": 95
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 9,
+        "Not selected": 91
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 13,
+        "Not selected": 87
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 6,
+        "Not selected": 94
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 12,
+        "Not selected": 88
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 7,
+        "Not selected": 93
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 13,
+        "Not selected": 87
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 9,
+        "Not selected": 91
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 11,
+        "Not selected": 89
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 8,
+        "Not selected": 92
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 10,
+        "Not selected": 90
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 10,
+        "Not selected": 90
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 8,
+        "Not selected": 92
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 10,
+        "Not selected": 90
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 7,
+        "Not selected": 93
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 15,
+        "Not selected": 85
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "None of these",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 32
+    },
+    {
+     "label": "Not selected",
+     "pct": 68
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 32,
+        "Not selected": 68
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 32,
+        "Not selected": 68
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 27,
+        "Not selected": 73
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 29,
+        "Not selected": 71
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 45,
+        "Not selected": 55
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 38,
+        "Not selected": 62
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 39,
+        "Not selected": 61
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 30,
+        "Not selected": 70
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 37,
+        "Not selected": 63
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 37,
+        "Not selected": 63
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 28,
+        "Not selected": 72
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 29,
+        "Not selected": 71
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 33,
+        "Not selected": 67
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 31,
+        "Not selected": 69
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 24,
+        "Not selected": 76
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 39,
+        "Not selected": 61
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 34,
+        "Not selected": 66
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 32,
+        "Not selected": 68
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 21,
+        "Not selected": 79
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC6",
+   "text": "In the past 12 months, have you done any of the following?",
+   "item": "Don't know",
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Selected",
+     "pct": 2
+    },
+    {
+     "label": "Not selected",
+     "pct": 98
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Selected": 0.5,
+        "Not selected": 100
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Selected": 3,
+        "Not selected": 97
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Selected": 4,
+        "Not selected": 96
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Selected": 0.5,
+        "Not selected": 100
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Selected": 0.5,
+        "Not selected": 100
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Selected": 4,
+        "Not selected": 96
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Selected": 0,
+        "Not selected": 100
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Selected": 0,
+        "Not selected": 100
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Selected": 4,
+        "Not selected": 96
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Selected": 0.5,
+        "Not selected": 100
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Selected": 2,
+        "Not selected": 98
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Selected": 1,
+        "Not selected": 99
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CIC7",
+   "text": "How much more likely would you be to take part in local government, if at all, if information about public meetings and decisions were easier to find and understand?",
+   "item": null,
+   "base": 1004,
+   "topline": [
+    {
+     "label": "Much more likely",
+     "pct": 17
+    },
+    {
+     "label": "Somewhat more likely",
+     "pct": 43
+    },
+    {
+     "label": "Not more likely at all",
+     "pct": 33
+    },
+    {
+     "label": "Don't know",
+     "pct": 8
+    }
+   ],
+   "crosstabs": [
+    {
+     "group": "Party ID",
+     "subgroups": [
+      {
+       "label": "Democrat",
+       "n": 437,
+       "vals": {
+        "Much more": 20,
+        "Somewhat": 47,
+        "Not at all": 27,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "Independent",
+       "n": 376,
+       "vals": {
+        "Much more": 17,
+        "Somewhat": 40,
+        "Not at all": 33,
+        "Don't know": 11
+       }
+      },
+      {
+       "label": "Republican",
+       "n": 190,
+       "vals": {
+        "Much more": 13,
+        "Somewhat": 41,
+        "Not at all": 41,
+        "Don't know": 5
+       }
+      }
+     ]
+    },
+    {
+     "group": "Gender",
+     "subgroups": [
+      {
+       "label": "Man",
+       "n": 417,
+       "vals": {
+        "Much more": 21,
+        "Somewhat": 44,
+        "Not at all": 30,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Woman",
+       "n": 580,
+       "vals": {
+        "Much more": 14,
+        "Somewhat": 41,
+        "Not at all": 35,
+        "Don't know": 10
+       }
+      }
+     ]
+    },
+    {
+     "group": "Race or ethnicity",
+     "subgroups": [
+      {
+       "label": "White",
+       "n": 577,
+       "vals": {
+        "Much more": 14,
+        "Somewhat": 39,
+        "Not at all": 40,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "Black",
+       "n": 124,
+       "vals": {
+        "Much more": 28,
+        "Somewhat": 47,
+        "Not at all": 20,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "Hispanic",
+       "n": 180,
+       "vals": {
+        "Much more": 24,
+        "Somewhat": 41,
+        "Not at all": 21,
+        "Don't know": 14
+       }
+      },
+      {
+       "label": "Other",
+       "n": 121,
+       "vals": {
+        "Much more": 13,
+        "Somewhat": 54,
+        "Not at all": 26,
+        "Don't know": 7
+       }
+      }
+     ]
+    },
+    {
+     "group": "Age",
+     "subgroups": [
+      {
+       "label": "18-34",
+       "n": 228,
+       "vals": {
+        "Much more": 20,
+        "Somewhat": 42,
+        "Not at all": 28,
+        "Don't know": 10
+       }
+      },
+      {
+       "label": "35-49",
+       "n": 272,
+       "vals": {
+        "Much more": 22,
+        "Somewhat": 48,
+        "Not at all": 24,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "50-64",
+       "n": 263,
+       "vals": {
+        "Much more": 19,
+        "Somewhat": 42,
+        "Not at all": 33,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "65+",
+       "n": 241,
+       "vals": {
+        "Much more": 9,
+        "Somewhat": 40,
+        "Not at all": 44,
+        "Don't know": 7
+       }
+      }
+     ]
+    },
+    {
+     "group": "Income",
+     "subgroups": [
+      {
+       "label": "Under $50K",
+       "n": 246,
+       "vals": {
+        "Much more": 17,
+        "Somewhat": 42,
+        "Not at all": 28,
+        "Don't know": 13
+       }
+      },
+      {
+       "label": "$50K-<$100K",
+       "n": 311,
+       "vals": {
+        "Much more": 20,
+        "Somewhat": 46,
+        "Not at all": 29,
+        "Don't know": 5
+       }
+      },
+      {
+       "label": "$100K-<$150K",
+       "n": 182,
+       "vals": {
+        "Much more": 14,
+        "Somewhat": 36,
+        "Not at all": 43,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "$150K+",
+       "n": 261,
+       "vals": {
+        "Much more": 17,
+        "Somewhat": 45,
+        "Not at all": 32,
+        "Don't know": 6
+       }
+      }
+     ]
+    },
+    {
+     "group": "Region",
+     "subgroups": [
+      {
+       "label": "Urban",
+       "n": 125,
+       "vals": {
+        "Much more": 19,
+        "Somewhat": 50,
+        "Not at all": 23,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "Suburb",
+       "n": 319,
+       "vals": {
+        "Much more": 15,
+        "Somewhat": 43,
+        "Not at all": 32,
+        "Don't know": 10
+       }
+      },
+      {
+       "label": "Exurban",
+       "n": 163,
+       "vals": {
+        "Much more": 20,
+        "Somewhat": 39,
+        "Not at all": 35,
+        "Don't know": 6
+       }
+      },
+      {
+       "label": "Phil/South",
+       "n": 240,
+       "vals": {
+        "Much more": 19,
+        "Somewhat": 42,
+        "Not at all": 31,
+        "Don't know": 8
+       }
+      },
+      {
+       "label": "Shore",
+       "n": 156,
+       "vals": {
+        "Much more": 15,
+        "Somewhat": 38,
+        "Not at all": 43,
+        "Don't know": 4
+       }
+      }
+     ]
+    },
+    {
+     "group": "Education",
+     "subgroups": [
+      {
+       "label": "HS or less",
+       "n": 241,
+       "vals": {
+        "Much more": 9,
+        "Somewhat": 43,
+        "Not at all": 36,
+        "Don't know": 12
+       }
+      },
+      {
+       "label": "Some college",
+       "n": 206,
+       "vals": {
+        "Much more": 22,
+        "Somewhat": 39,
+        "Not at all": 32,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "College grad",
+       "n": 255,
+       "vals": {
+        "Much more": 17,
+        "Somewhat": 45,
+        "Not at all": 32,
+        "Don't know": 7
+       }
+      },
+      {
+       "label": "Grad work",
+       "n": 302,
+       "vals": {
+        "Much more": 22,
+        "Somewhat": 44,
+        "Not at all": 29,
+        "Don't know": 5
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
