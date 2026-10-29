@@ -229,6 +229,7 @@ header.container.at {
 .at .HeaderHtml em,
 .at .HeaderHtml strong {
   font-family: inherit !important;
+  font-size: inherit !important;
   color: inherit !important;
   background: none !important;
 }

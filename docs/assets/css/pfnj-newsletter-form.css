@@ -1,0 +1,785 @@
+/* ============================================
+   Press Forward New Jersey
+   Newsletter Signup Form — Custom Styles
+   For EveryAction (ActionTag) signup forms
+   ============================================
+
+   HOW TO USE:
+   1. In EveryAction, open the form's Theme and replace
+      the custom stylesheet with this file. Same design
+      system as pfnj-donation-form.css, minus the
+      donation controls.
+   2. Form Title shows as a small gold label above the
+      headline — e.g. "Press Forward New Jersey Newsletter".
+   3. Paste the markup in
+      docs/assets/everyaction/pfnj-newsletter-header.html
+      into the form's "Header" rich text (Source mode).
+
+   BRAND:
+   - Navy #224158, chevron blue #2a4c67, gold #F2AF1B
+   - Body: Mulish (same as njcivicinfo.org)
+   - Accent: Playfair Display italic
+
+   LAYOUT:
+   - Desktop (>= 1000px): intro on the left, form card
+     on the right, on a navy chevron background.
+   - Tablet/mobile: single column, intro above form.
+
+   ============================================ */
+
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,700;1,800&display=swap');
+
+
+/* --- Design Tokens (Press Forward New Jersey) --- */
+:root {
+  --pfnj-navy: #224158;
+  --pfnj-navy-light: #2a4c67;
+  --pfnj-navy-dark: #18303f;
+  --pfnj-gold: #F2AF1B;
+  --pfnj-gold-light: #f6c452;
+  --pfnj-gold-dark: #d99a0f;
+  --pfnj-mist: #cfdbe6;
+  --pfnj-error: #d64545;
+  --pfnj-white: #ffffff;
+  --pfnj-offwhite: #f6f8fa;
+  --pfnj-gray-100: #eef2f5;
+  --pfnj-gray-200: #dde4ea;
+  --pfnj-gray-300: #c3ced8;
+  --pfnj-gray-600: #566878;
+  --pfnj-gray-800: #1f2f3c;
+  --pfnj-font: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pfnj-font-accent: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --pfnj-transition: all 0.25s ease-in-out;
+  --pfnj-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --pfnj-shadow-md: 0 6px 20px rgba(0, 0, 0, 0.14);
+  --pfnj-shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.28);
+  --pfnj-radius: 16px;
+  --pfnj-radius-sm: 8px;
+  --pfnj-radius-pill: 40px;
+}
+
+
+/* -----------------------------------------------
+   1. PAGE BACKGROUND & BASE TYPE
+   The current EveryAction theme paints everything
+   navy with white Verdana text; reset it here.
+   ----------------------------------------------- */
+
+html,
+html > body,
+body .content,
+body .panel-content {
+  background-color: var(--pfnj-navy) !important;
+  color: var(--pfnj-white) !important;
+  font-family: var(--pfnj-font) !important;
+}
+
+/* Chevron pattern from the PFNJ graphics */
+html > body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1100 1000' preserveAspectRatio='xMaxYMid slice'%3E%3Cg fill='%232a4c67'%3E%3Cpolygon points='0,0 260,0 560,500 260,1000 0,1000 300,500'/%3E%3Cpolygon points='500,0 760,0 1060,500 760,1000 500,1000 800,500'/%3E%3C/g%3E%3C/svg%3E") !important;
+  background-size: auto 100vh !important;
+  background-position: right -8vh center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+body .content,
+body .panel-content {
+  background-color: transparent !important;
+}
+
+.at,
+.at * {
+  font-family: var(--pfnj-font) !important;
+  color: var(--pfnj-gray-800) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.at {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+.at section.at-inner,
+.at .at-fields,
+.at form {
+  background-color: transparent !important;
+}
+
+
+/* -----------------------------------------------
+   2. BANNER IMAGE
+   ActionTag: header.container.at > figure.at-banner
+   ----------------------------------------------- */
+
+header.container.at {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 24px 24px 0 !important;
+}
+
+.at-banner {
+  margin: 0 !important;
+}
+
+.at-banner img {
+  display: block;
+  width: 100%;
+  border-radius: var(--pfnj-radius);
+  box-shadow: var(--pfnj-shadow-md);
+}
+
+
+/* -----------------------------------------------
+   3. PAGE LAYOUT
+   ActionTag: section.at-inner holds header.at-title,
+   header.HeaderHtml, .at-error-console, form, footer
+   ----------------------------------------------- */
+
+.at.ngp-form,
+.ngp-form {
+  max-width: 1200px !important;
+}
+
+.at section.at-inner {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 48px 24px 64px !important;
+  box-shadow: none !important;
+}
+
+@media (min-width: 1000px) {
+  .at section.at-inner {
+    display: grid !important;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    column-gap: 56px;
+    align-items: start;
+  }
+
+  .at section.at-inner > .at-title       { grid-column: 1; grid-row: 1; }
+  .at section.at-inner > .HeaderHtml     { grid-column: 1; grid-row: 2; }
+  .at section.at-inner > .at-error-console { grid-column: 2; grid-row: 1; }
+  .at section.at-inner > form            { grid-column: 2; grid-row: 1 / span 3; }
+  .at section.at-inner > .FooterHtml     { grid-column: 1 / -1; }
+
+  /* Story column follows the reader down the page */
+  .at section.at-inner > .HeaderHtml {
+    position: sticky;
+    top: 32px;
+  }
+}
+
+
+/* -----------------------------------------------
+   4. FORM TITLE → gold label + bar
+   ActionTag: header.at-title
+   ----------------------------------------------- */
+
+.at header.at-title {
+  display: block;
+  margin: 0 0 20px !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pfnj-gold) !important;
+  text-align: left !important;
+  background: none !important;
+}
+
+/* Cancel the NJCIC stylesheet's accent bar if both are loaded */
+.at header.at-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Short gold bar above, as in the graphics */
+.at header.at-title::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 7px;
+  margin-bottom: 22px;
+  border-radius: 4px;
+  background: var(--pfnj-gold);
+}
+
+
+/* -----------------------------------------------
+   5. STORY COPY (Header HTML)
+   ActionTag: header.at-markup.HeaderHtml
+   Headline is the <h2>; wrap words in <strong> for
+   gold and <em> for the Playfair italic accent.
+   ----------------------------------------------- */
+
+.at .HeaderHtml {
+  margin: 0 0 32px !important;
+  padding: 0 !important;
+  text-align: left !important;
+  background: none !important;
+}
+
+.at .HeaderHtml h1,
+.at .HeaderHtml h2 {
+  margin: 0 0 24px !important;
+  font-family: var(--pfnj-font) !important;
+  font-size: 48px !important;
+  font-weight: 900 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.015em;
+  color: var(--pfnj-white) !important;
+  background: none !important;
+}
+
+.at .HeaderHtml h1 strong,
+.at .HeaderHtml h2 strong,
+.at .HeaderHtml .pfnj-gold {
+  font-weight: 900 !important;
+  color: var(--pfnj-gold) !important;
+}
+
+.at .HeaderHtml h1 em,
+.at .HeaderHtml h2 em,
+.at .HeaderHtml .pfnj-accent {
+  font-family: var(--pfnj-font-accent) !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+  color: inherit !important;
+}
+
+.at .HeaderHtml p {
+  margin: 0 0 18px !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  color: var(--pfnj-mist) !important;
+}
+
+/* Strip inline fonts/colors pasted in by the rich text editor */
+.at .HeaderHtml p span,
+.at .HeaderHtml p em,
+.at .HeaderHtml p strong {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  background: none !important;
+}
+
+.at .HeaderHtml p strong {
+  font-weight: 800 !important;
+  color: var(--pfnj-white) !important;
+}
+
+.at .HeaderHtml p em {
+  font-family: var(--pfnj-font-accent) !important;
+  font-style: italic !important;
+}
+
+/* Lead paragraph right after the headline */
+.at .HeaderHtml h2 + p,
+.at .HeaderHtml .pfnj-lead {
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+  font-weight: 700 !important;
+  color: var(--pfnj-mist) !important;
+}
+
+/* Closing call to action — a paragraph that is all bold */
+.at .HeaderHtml p:last-child > strong:only-child,
+.at .HeaderHtml .pfnj-cta {
+  display: inline-block;
+  margin-top: 6px;
+  padding-bottom: 4px;
+  font-size: 21px !important;
+  font-weight: 900 !important;
+  color: var(--pfnj-gold) !important;
+  border-bottom: 3px solid var(--pfnj-gold);
+}
+
+.at .HeaderHtml a {
+  color: var(--pfnj-gold) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+
+/* -----------------------------------------------
+   6. FORM CARD
+   ----------------------------------------------- */
+
+.at section.at-inner > form {
+  background-color: var(--pfnj-white) !important;
+  padding: 40px !important;
+  border-radius: var(--pfnj-radius);
+  border-top: 6px solid var(--pfnj-gold);
+  box-shadow: var(--pfnj-shadow-lg);
+}
+
+/* FastAction "log in / sign up" strip */
+.at .FastAction,
+.at .fastAction,
+.at .fastAction p {
+  background-color: transparent !important;
+}
+
+.at .fastAction {
+  padding: 0 0 16px !important;
+  margin-bottom: 8px !important;
+  border-bottom: 1px solid var(--pfnj-gray-200);
+}
+
+.at .fastAction .fa-lead,
+.at .fastAction .fa-cta,
+.at .fastAction p {
+  font-size: 13px !important;
+  color: var(--pfnj-gray-600) !important;
+}
+
+
+/* -----------------------------------------------
+   7. FIELDSETS & SECTION HEADINGS
+   ActionTag: fieldset.at-fieldset, legend.at-legend
+   ----------------------------------------------- */
+
+.at fieldset.at-fieldset {
+  padding: 24px 0 8px !important;
+  margin: 0 !important;
+  border: 0 !important;
+  min-width: 100%;
+}
+
+.at fieldset.at-fieldset + fieldset.at-fieldset {
+  border-top: 1px solid var(--pfnj-gray-200) !important;
+  margin-top: 16px !important;
+}
+
+.at fieldset.at-fieldset legend.at-legend {
+  float: left;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 0 18px !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: var(--pfnj-navy) !important;
+}
+
+.at fieldset.at-fieldset legend.at-legend + * {
+  clear: both;
+}
+
+
+
+/* -----------------------------------------------
+   8. INTEREST CHECKBOXES — option tiles
+   ActionTag: fieldset.Interests label.at-check
+   ----------------------------------------------- */
+
+.at fieldset.Interests .at-row {
+  margin: 0 !important;
+}
+
+.at fieldset.Interests label.at-check {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 10px !important;
+  padding: 14px 16px !important;
+  background-color: var(--pfnj-white) !important;
+  border: 2px solid var(--pfnj-gray-200);
+  border-radius: var(--pfnj-radius-sm);
+  cursor: pointer;
+  transition: var(--pfnj-transition);
+}
+
+.at fieldset.Interests label.at-check:hover {
+  border-color: var(--pfnj-gray-300);
+}
+
+.at fieldset.Interests label.at-check:has(input:checked) {
+  border-color: var(--pfnj-navy);
+  background-color: var(--pfnj-offwhite) !important;
+}
+
+.at fieldset.Interests label.at-check .at-checkbox-title-container {
+  margin-bottom: 0 !important;
+}
+
+.at fieldset.Interests .at-checkbox-title {
+  font-weight: 700 !important;
+  color: var(--pfnj-navy) !important;
+}
+
+
+/* -----------------------------------------------
+   9. LABELS
+   ----------------------------------------------- */
+
+.at label,
+.at .at-row label {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: var(--pfnj-navy) !important;
+  letter-spacing: 0.01em;
+}
+
+.at label small,
+.at label small.optional {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: var(--pfnj-gray-600) !important;
+}
+
+
+/* -----------------------------------------------
+   10. TEXT INPUTS, SELECTS, CARD FIELDS
+   Card number / expiry are secure (VGS) iframes —
+   only their border can be styled.
+   ----------------------------------------------- */
+
+.at input[type="text"],
+.at input[type="email"],
+.at input[type="tel"],
+.at input[type="url"],
+.at input[type="number"]:not(.edit-otheramount),
+.at input[type="password"],
+.at input[type="date"],
+.at textarea,
+.at select,
+.at label select,
+.at label.at-text input[type="tel"],
+.at label.at-text input[type="email"],
+.at .error input[type="text"]:required,
+.at .error input[type="email"]:required,
+.at .error input[type="tel"]:required {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 50px;
+  padding: 12px 16px !important;
+  margin-top: 6px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: var(--pfnj-gray-800) !important;
+  background-color: var(--pfnj-white) !important;
+  border: 2px solid var(--pfnj-gray-200) !important;
+  border-radius: var(--pfnj-radius-sm) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: var(--pfnj-transition);
+  box-sizing: border-box;
+}
+
+.at input:hover,
+.at textarea:hover,
+.at select:hover {
+  border-color: var(--pfnj-gray-300) !important;
+}
+
+.at input[type="text"]:focus,
+.at input[type="email"]:focus,
+.at input[type="tel"]:focus,
+.at input[type="number"]:focus,
+.at textarea:focus,
+.at select:focus {
+  border-color: var(--pfnj-navy-light) !important;
+  box-shadow: 0 0 0 3px rgba(34, 65, 88, 0.16) !important;
+}
+
+.at input::placeholder,
+.at textarea::placeholder {
+  color: var(--pfnj-gray-300) !important;
+  font-family: var(--pfnj-font) !important;
+}
+
+/* EveryAction's hidden anti-spam field — keep it hidden */
+.at label.at-text.PersonalUrl {
+  display: none !important;
+}
+
+.at select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235a6872' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px center !important;
+  padding-right: 44px !important;
+}
+
+.at select option {
+  color: var(--pfnj-gray-800) !important;
+  background-color: var(--pfnj-white) !important;
+}
+
+.vgs-input-container iframe,
+.at .vgs-input-container.isFocused iframe {
+  background-color: var(--pfnj-white) !important;
+  border: 2px solid var(--pfnj-gray-200) !important;
+  border-radius: var(--pfnj-radius-sm) !important;
+}
+
+.at .vgs-input-container iframe:focus,
+.at .vgs-input-container.isFocused iframe {
+  border-color: var(--pfnj-navy-light) !important;
+}
+
+
+/* -----------------------------------------------
+   11. CHECKBOXES
+   ActionTag draws the box with
+   span.at-checkbox-title-container::before
+   ----------------------------------------------- */
+
+.at label.at-check {
+  font-weight: 500 !important;
+}
+
+.at .at-checkbox-title,
+.at .at-checkbox-title-container,
+.at .at-cover-costs-info {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: var(--pfnj-gray-800) !important;
+}
+
+.at .at-cover-costs-info strong {
+  font-weight: 800 !important;
+  color: var(--pfnj-navy) !important;
+}
+
+.at .at-checkbox-title-container::before,
+.at input[type="checkbox"] + span.at-checkbox-title-container::before {
+  background-color: var(--pfnj-white) !important;
+  border: 2px solid var(--pfnj-gray-300) !important;
+  border-radius: 5px !important;
+}
+
+.at label input[type="checkbox"]:checked + span::before {
+  background-color: var(--pfnj-navy) !important;
+  border-color: var(--pfnj-navy) !important;
+}
+
+.at label input[type="checkbox"]:hover + span::before,
+.at label input[type="checkbox"]:focus + span::before {
+  border-color: var(--pfnj-navy-light) !important;
+  box-shadow: 0 0 0 3px rgba(34, 65, 88, 0.16) !important;
+}
+
+.at input[type="radio"] {
+  accent-color: var(--pfnj-navy) !important;
+}
+
+/* -----------------------------------------------
+   12. SUBMIT BUTTON
+   ActionTag: input.at-submit.btn-at.btn-at-primary
+   ----------------------------------------------- */
+
+.at .at-form-submit {
+  padding: 16px 0 0 !important;
+}
+
+.at .at-form-submit .btn-at,
+.at .at-form-submit .btn-at-primary,
+.at input.at-submit {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 8px 0 0 !important;
+  padding: 18px 32px !important;
+  font-family: var(--pfnj-font) !important;
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.02em;
+  color: var(--pfnj-navy) !important;
+  background-color: var(--pfnj-gold) !important;
+  border: 0 !important;
+  border-radius: var(--pfnj-radius-pill) !important;
+  box-shadow: 0 6px 16px rgba(242, 175, 27, 0.35) !important;
+  text-shadow: none !important;
+  cursor: pointer;
+  transition: var(--pfnj-transition);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.at .at-form-submit .btn-at:hover,
+.at input.at-submit:hover {
+  background-color: var(--pfnj-gold-light) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(242, 175, 27, 0.42) !important;
+}
+
+.at .at-form-submit .btn-at:active,
+.at input.at-submit:active {
+  transform: translateY(0);
+}
+
+.at .at-form-submit .btn-at:focus-visible,
+.at input.at-submit:focus-visible {
+  outline: 3px solid var(--pfnj-navy-light) !important;
+  outline-offset: 3px;
+}
+
+/* -----------------------------------------------
+   13. ERRORS & ALERTS
+   ----------------------------------------------- */
+
+.at input.error,
+.at textarea.error,
+.at select.error,
+.at .error input[type="text"],
+.at .error input[type="email"],
+.at .error select {
+  border-color: var(--pfnj-error) !important;
+  box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.12) !important;
+}
+
+.at small.error,
+.at .error small,
+.at .at-error-console,
+.at .at-error-console * {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--pfnj-error) !important;
+}
+
+/* Old newsletter CSS padded this even when empty */
+.at .at-page-alert:empty {
+  display: none !important;
+}
+
+.at .at-page-alert:not(:empty),
+.at .at-alert {
+  padding: 14px 18px !important;
+  font-size: 15px !important;
+  color: var(--pfnj-gray-800) !important;
+  background-color: #fdf0f0 !important;
+  border-left: 4px solid var(--pfnj-error);
+  border-radius: var(--pfnj-radius-sm) !important;
+}
+
+
+/* -----------------------------------------------
+   14. LINKS
+   ----------------------------------------------- */
+
+.at a {
+  color: var(--pfnj-navy) !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--pfnj-gold);
+  text-underline-offset: 3px;
+}
+
+.at a:hover {
+  color: var(--pfnj-navy-light) !important;
+}
+
+
+/* -----------------------------------------------
+   15. PAGE FOOTER (on navy)
+   ActionTag: footer.container.form-footer.at
+   ----------------------------------------------- */
+
+footer.form-footer.at {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 32px 24px 40px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+
+footer.form-footer.at,
+footer.form-footer.at * {
+  color: var(--pfnj-mist) !important;
+}
+
+footer.form-footer.at p {
+  margin: 0 0 6px !important;
+  font-size: 14px !important;
+}
+
+footer.form-footer.at a {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: var(--pfnj-white) !important;
+  text-decoration: none;
+}
+
+footer.form-footer.at a:hover {
+  color: var(--pfnj-gold) !important;
+}
+
+footer.form-footer.at .at-paid-for-by {
+  display: inline-block;
+  opacity: 1 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 13px !important;
+}
+
+.poweredby,
+div.poweredby,
+.poweredby a {
+  background-color: transparent !important;
+  color: var(--pfnj-mist) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+
+/* -----------------------------------------------
+   16. RESPONSIVE
+   ----------------------------------------------- */
+
+@media (max-width: 999px) {
+  .at section.at-inner {
+    max-width: 680px !important;
+    padding-top: 36px !important;
+  }
+
+  .at .HeaderHtml h2 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 40em) {
+  header.container.at {
+    padding: 12px 12px 0 !important;
+  }
+
+  .at-banner img {
+    border-radius: 12px;
+  }
+
+  .at section.at-inner {
+    padding: 28px 16px 40px !important;
+  }
+
+  .at .HeaderHtml h2 {
+    font-size: 32px !important;
+  }
+
+  .at .HeaderHtml h2 + p,
+  .at .HeaderHtml .pfnj-lead {
+    font-size: 19px !important;
+  }
+
+  .at .HeaderHtml p {
+    font-size: 17px !important;
+  }
+
+  .at section.at-inner > form {
+    padding: 28px 20px !important;
+  }
+
+  .at .at-row {
+    flex-direction: column;
+  }
+
+  .at .at-row > * {
+    width: 100% !important;
+  }
+}

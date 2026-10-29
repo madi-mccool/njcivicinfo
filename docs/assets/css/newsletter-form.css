@@ -1,18 +1,24 @@
 /* ============================================
    NJ Civic Information Consortium
    Newsletter Signup Form — Custom Styles
-   For EveryAction ActionTag forms
+   For the EveryAction signup form at
+   https://secure.everyaction.com/-A4uO6gJP0ami_tIU_0paA2
    ============================================
 
    HOW TO USE:
-   In EveryAction, go to your form's Theme settings.
-   Paste this CSS into the <head> section of your Theme
-   wrapped in <style> tags, or link to this file.
+   In EveryAction, open the form's Theme and replace the
+   custom stylesheet with this file. Same design system
+   as donation-form.css, minus the donation controls.
 
-   ActionTag renders forms inside a .ngp-form container
-   using .at prefixed class names. This stylesheet
-   overrides ActionTag's default at.min.css to match
-   the njcivicinfo.org design system.
+   - The Form Title is the big headline, with a small
+     orange "Newsletter" label above it.
+   - Header HTML: the first paragraph is styled as the
+     lead; add more <p> tags as needed.
+
+   LAYOUT:
+   - Desktop (>= 1000px): intro on the left, form card
+     on the right.
+   - Tablet/mobile: single column, intro above form.
 
    ============================================ */
 
@@ -40,7 +46,7 @@
   --njcic-gray-600: #5a6872;
   --njcic-gray-800: #2d3640;
   --njcic-font: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --njcic-transition: all 0.35s ease-in-out;
+  --njcic-transition: all 0.25s ease-in-out;
   --njcic-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --njcic-shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
   --njcic-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
@@ -51,514 +57,694 @@
 
 
 /* -----------------------------------------------
-   1. ROOT FORM CONTAINER
-   ActionTag: .at (root), .at-inner (background),
-   .ngp-form (embed wrapper)
+   1. PAGE BACKGROUND & BASE TYPE
+   The current EveryAction theme paints everything
+   navy with white Verdana text; reset it here.
    ----------------------------------------------- */
 
-/* Override ActionTag's base font and color */
-.at {
+html,
+html > body,
+body .content,
+body .panel-content {
+  background-color: var(--njcic-offwhite) !important;
   color: var(--njcic-gray-800) !important;
   font-family: var(--njcic-font) !important;
-  font-size: 17px !important;
-  line-height: 1.7 !important;
+}
+
+.at,
+.at * {
+  font-family: var(--njcic-font) !important;
+  color: var(--njcic-gray-800) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Inner container — the white card */
-.at .at-inner {
-  background-color: var(--njcic-white) !important;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 48px 40px;
+.at {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+.at section.at-inner,
+.at .at-fields,
+.at form {
+  background-color: transparent !important;
+}
+
+
+/* -----------------------------------------------
+   2. BANNER IMAGE
+   ActionTag: header.container.at > figure.at-banner
+   ----------------------------------------------- */
+
+header.container.at {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 24px 24px 0 !important;
+}
+
+.at-banner {
+  margin: 0 !important;
+}
+
+.at-banner img {
+  display: block;
+  width: 100%;
   border-radius: var(--njcic-radius);
+  box-shadow: var(--njcic-shadow-md);
+}
+
+
+/* -----------------------------------------------
+   3. PAGE LAYOUT
+   ActionTag: section.at-inner holds header.at-title,
+   header.HeaderHtml, .at-error-console, form, footer
+   ----------------------------------------------- */
+
+.at.ngp-form,
+.ngp-form {
+  max-width: 1200px !important;
+}
+
+.at section.at-inner {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 48px 24px 64px !important;
+  box-shadow: none !important;
+}
+
+@media (min-width: 1000px) {
+  .at section.at-inner {
+    display: grid !important;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    column-gap: 56px;
+    align-items: start;
+  }
+
+  .at section.at-inner > .at-title       { grid-column: 1; grid-row: 1; }
+  .at section.at-inner > .HeaderHtml     { grid-column: 1; grid-row: 2; }
+  .at section.at-inner > .at-error-console { grid-column: 2; grid-row: 1; }
+  .at section.at-inner > form            { grid-column: 2; grid-row: 1 / span 3; }
+  .at section.at-inner > .FooterHtml     { grid-column: 1 / -1; }
+
+  /* Story column follows the reader down the page */
+  .at section.at-inner > .HeaderHtml {
+    position: sticky;
+    top: 32px;
+  }
+}
+
+
+/* -----------------------------------------------
+   4. HEADLINE (Form Title)
+   ActionTag: header.at-title
+   Set Form Title to "Stronger Local News.
+   Stronger Communities."
+   ----------------------------------------------- */
+
+.at header.at-title {
+  display: block;
+  margin: 0 0 24px !important;
+  padding: 0 !important;
+  font-size: 44px !important;
+  font-weight: 900 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em;
+  color: var(--njcic-navy) !important;
+  text-align: left !important;
+  background: none !important;
+}
+
+/* Eyebrow above the headline */
+.at header.at-title::before {
+  content: "Newsletter";
+  display: block;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--njcic-orange);
+}
+
+/* Accent bar under the headline */
+.at header.at-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 5px;
+  margin-top: 22px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--njcic-robin) 0 50%, var(--njcic-yellow) 50% 100%);
+}
+
+
+/* -----------------------------------------------
+   5. STORY COPY (Header HTML)
+   ActionTag: header.at-markup.HeaderHtml
+   Works with or without the classes in
+   donation-header.html — plain <p> and <strong>
+   are styled too.
+   ----------------------------------------------- */
+
+.at .HeaderHtml {
+  margin: 0 0 32px !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.at .HeaderHtml p {
+  margin: 0 0 18px !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  color: var(--njcic-gray-800) !important;
+}
+
+/* Strip inline fonts/colors pasted in by the rich text editor */
+.at .HeaderHtml span,
+.at .HeaderHtml em,
+.at .HeaderHtml strong {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  background: none !important;
+}
+
+.at .HeaderHtml strong {
+  font-weight: 800 !important;
+}
+
+/* Lead paragraph */
+.at .HeaderHtml p:first-child,
+.at .HeaderHtml .njcic-lead {
+  font-size: 21px !important;
+  line-height: 1.6 !important;
+  color: var(--njcic-navy) !important;
+  font-weight: 600 !important;
+}
+
+/* Callout — a paragraph that is all bold */
+.at .HeaderHtml p > strong:only-child,
+.at .HeaderHtml .njcic-callout {
+  display: block;
+  padding: 20px 24px;
+  margin: 8px 0;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: var(--njcic-navy) !important;
+  background-color: var(--njcic-white) !important;
+  border-left: 5px solid var(--njcic-robin);
+  border-radius: 0 var(--njcic-radius-sm) var(--njcic-radius-sm) 0;
+  box-shadow: var(--njcic-shadow-sm);
+}
+
+/* Closing line — last paragraph, all bold */
+.at .HeaderHtml p:last-child > strong:only-child,
+.at .HeaderHtml .njcic-cta {
+  display: inline-block;
+  padding: 0 0 4px;
+  margin: 4px 0 0;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  color: var(--njcic-orange) !important;
+  background: none !important;
+  border-left: 0;
+  border-bottom: 3px solid var(--njcic-yellow);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.at .HeaderHtml a {
+  color: var(--njcic-navy) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--njcic-robin) !important;
+  text-underline-offset: 3px;
+}
+
+
+/* -----------------------------------------------
+   6. FORM CARD
+   ----------------------------------------------- */
+
+.at section.at-inner > form {
+  background-color: var(--njcic-white) !important;
+  padding: 40px !important;
+  border-radius: var(--njcic-radius);
+  border-top: 6px solid var(--njcic-orange);
   box-shadow: var(--njcic-shadow-lg);
 }
 
-/* Embed wrapper (used when ActionTag is embedded via script) */
-.ngp-form {
-  font-family: var(--njcic-font) !important;
+/* FastAction "log in / sign up" strip */
+.at .FastAction,
+.at .fastAction,
+.at .fastAction p {
+  background-color: transparent !important;
 }
 
-
-/* -----------------------------------------------
-   2. FORM TITLE, OPEN GRAPH TITLE & DESCRIPTION
-   ActionTag: .at-title (form title heading),
-   .at-markup (OG description / rich text blocks),
-   .at-subtitle (OG title / subtitle text)
-   ----------------------------------------------- */
-
-/* Form Title — Blue (navy) */
-.at h1,
-.at h2,
-.at h3,
-.at .at-title {
-  font-family: var(--njcic-font) !important;
-  font-weight: 800 !important;
-  line-height: 1.2 !important;
-  color: var(--njcic-robin) !important;
-  text-align: center;
-}
-
-.at h2 {
-  font-size: 28px !important;
+.at .fastAction {
+  padding: 0 0 16px !important;
   margin-bottom: 8px !important;
+  border-bottom: 1px solid var(--njcic-gray-200);
 }
 
-/* Open Graph Title — Blue (navy) */
-.at .at-subtitle {
-  font-family: var(--njcic-font) !important;
-  color: var(--njcic-robin) !important;
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  text-align: center;
-  margin-bottom: 24px !important;
-}
-
-/* Open Graph Description — Mulish font at our body size */
-.at .at-markup {
-  font-family: var(--njcic-font) !important;
-  font-size: 15px !important;
-  line-height: 1 !important;
-  color: var(--njcic-navy);
-  text-align: center;
-  margin-bottom: 16px !important;
+.at .fastAction .fa-lead,
+.at .fastAction .fa-cta,
+.at .fastAction p {
+  font-size: 13px !important;
+  color: var(--njcic-gray-600) !important;
 }
 
 
 /* -----------------------------------------------
-   3. FIELDSETS & FIELD ROWS
-   ActionTag: .at-fieldset (field groups),
-   .at-row (flex row for side-by-side fields),
-   fieldset (native HTML fieldset)
+   7. FIELDSETS & SECTION HEADINGS
+   ActionTag: fieldset.at-fieldset, legend.at-legend
    ----------------------------------------------- */
 
-.at fieldset {
-  border-width: 0;
-  padding: 0 0 16px;
-  margin: 0;
-}
-
-.at .at-fieldset {
-  padding: 10px 0 !important;
+.at fieldset.at-fieldset {
+  padding: 24px 0 8px !important;
+  margin: 0 !important;
+  border: 0 !important;
   min-width: 100%;
 }
 
-/* Remove default border on grouped fieldsets */
-.at .at-fieldset-noborder {
-  border: none;
+.at fieldset.at-fieldset + fieldset.at-fieldset {
+  border-top: 1px solid var(--njcic-gray-200) !important;
+  margin-top: 16px !important;
 }
 
-/* Row layout — fields side by side */
-.at .at-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 12px;
+.at fieldset.at-fieldset legend.at-legend {
+  float: left;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 0 18px !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: var(--njcic-navy) !important;
+}
+
+.at fieldset.at-fieldset legend.at-legend + * {
+  clear: both;
+}
+
+
+
+/* -----------------------------------------------
+   8. INTEREST CHECKBOXES — option tiles
+   ActionTag: fieldset.Interests label.at-check
+   ----------------------------------------------- */
+
+.at fieldset.Interests .at-row {
+  margin: 0 !important;
+}
+
+.at fieldset.Interests label.at-check {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 10px !important;
+  padding: 14px 16px !important;
+  background-color: var(--njcic-white) !important;
+  border: 2px solid var(--njcic-gray-200);
+  border-radius: var(--njcic-radius-sm);
+  cursor: pointer;
+  transition: var(--njcic-transition);
+}
+
+.at fieldset.Interests label.at-check:hover {
+  border-color: var(--njcic-gray-300);
+}
+
+.at fieldset.Interests label.at-check:has(input:checked) {
+  border-color: var(--njcic-navy);
+  background-color: var(--njcic-offwhite) !important;
+}
+
+.at fieldset.Interests label.at-check .at-checkbox-title-container {
+  margin-bottom: 0 !important;
+}
+
+.at fieldset.Interests .at-checkbox-title {
+  font-weight: 700 !important;
+  color: var(--njcic-navy) !important;
 }
 
 
 /* -----------------------------------------------
-   4. LABELS
-   ActionTag: label (generic), .at-check label
-   Default: font-size .875rem, color #183642
+   9. LABELS
    ----------------------------------------------- */
 
-.at label {
-  display: block !important;
-  font-family: var(--njcic-font) !important;
+.at label,
+.at .at-row label {
   font-size: 14px !important;
   font-weight: 700 !important;
   color: var(--njcic-navy) !important;
-  margin-bottom: 6px !important;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
-/* "Optional" helper text next to labels */
+.at label small,
 .at label small.optional {
-  font-weight: 400 !important;
-  color: var(--njcic-gray-600) !important;
   font-size: 12px !important;
+  font-weight: 500 !important;
+  color: var(--njcic-gray-600) !important;
 }
 
 
 /* -----------------------------------------------
-   5. TEXT INPUTS, SELECTS, TEXTAREAS
-   ActionTag: .at-text, input[type=text/email/tel...],
-   textarea, select
-   Default: border 1px #ced4da, border-radius 4px,
-   height 2.3125rem, font-size .875rem
+   10. TEXT INPUTS, SELECTS, CARD FIELDS
+   Card number / expiry are secure (VGS) iframes —
+   only their border can be styled.
    ----------------------------------------------- */
 
 .at input[type="text"],
 .at input[type="email"],
 .at input[type="tel"],
 .at input[type="url"],
-.at input[type="number"],
+.at input[type="number"]:not(.edit-otheramount),
 .at input[type="password"],
-.at input[type="search"],
 .at input[type="date"],
 .at textarea,
-.at select {
+.at select,
+.at label select,
+.at label.at-text input[type="tel"],
+.at label.at-text input[type="email"],
+.at .error input[type="text"]:required,
+.at .error input[type="email"]:required,
+.at .error input[type="tel"]:required {
   width: 100% !important;
   height: auto !important;
-  padding: 14px 18px !important;
-  font-family: var(--njcic-font) !important;
+  min-height: 50px;
+  padding: 12px 16px !important;
+  margin-top: 6px !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   color: var(--njcic-gray-800) !important;
   background-color: var(--njcic-white) !important;
   border: 2px solid var(--njcic-gray-200) !important;
   border-radius: var(--njcic-radius-sm) !important;
+  box-shadow: none !important;
   outline: none !important;
   transition: var(--njcic-transition);
-  -webkit-appearance: none;
-  appearance: none;
   box-sizing: border-box;
 }
 
-/* Focus — teal ring (overrides ActionTag's blue glow) */
-.at input[type="text"]:focus,
-.at input[type="email"]:focus,
-.at input[type="tel"]:focus,
-.at input[type="url"]:focus,
-.at input[type="number"]:focus,
-.at input[type="password"]:focus,
-.at textarea:focus,
-.at select:focus {
-  border-color: var(--njcic-teal) !important;
-  box-shadow: 0 0 0 3px rgba(58, 197, 201, 0.15) !important;
-}
-
-/* Hover */
-.at input[type="text"]:hover,
-.at input[type="email"]:hover,
-.at input[type="tel"]:hover,
+.at input:hover,
 .at textarea:hover,
 .at select:hover {
   border-color: var(--njcic-gray-300) !important;
 }
 
-/* Placeholder text */
+.at input[type="text"]:focus,
+.at input[type="email"]:focus,
+.at input[type="tel"]:focus,
+.at input[type="number"]:focus,
+.at textarea:focus,
+.at select:focus {
+  border-color: var(--njcic-teal) !important;
+  box-shadow: 0 0 0 3px rgba(58, 197, 201, 0.18) !important;
+}
+
 .at input::placeholder,
 .at textarea::placeholder {
   color: var(--njcic-gray-300) !important;
-  font-weight: 400;
+  font-family: var(--njcic-font) !important;
 }
 
-/* Textarea — taller */
-.at textarea {
-  min-height: 120px !important;
-  resize: vertical;
+/* EveryAction's hidden anti-spam field — keep it hidden */
+.at label.at-text.PersonalUrl {
+  display: none !important;
 }
 
-/* Select dropdown arrow */
 .at select {
+  -webkit-appearance: none;
+  appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%235a6872' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
   background-position: right 16px center !important;
   padding-right: 44px !important;
 }
 
-
-/* -----------------------------------------------
-   6. CHECKBOXES & RADIO BUTTONS
-   ActionTag: .at-check, input[type=checkbox],
-   input[type=radio], .at-radio-set-buttons,
-   label.at-btn-radio
-   ----------------------------------------------- */
-
-.at .at-check {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.at input[type="checkbox"],
-.at input[type="radio"] {
-  accent-color: var(--njcic-robin) !important;
-  width: 18px !important;
-  height: 18px !important;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.at .at-check label {
-  font-size: 15px !important;
-  font-weight: 400 !important;
+.at select option {
   color: var(--njcic-gray-800) !important;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+  background-color: var(--njcic-white) !important;
 }
 
-/* Radio button set styled as toggle pills */
-.at label.at-btn-radio {
-  font-family: var(--njcic-font) !important;
-  border-radius: var(--njcic-radius-pill) !important;
+.vgs-input-container iframe,
+.at .vgs-input-container.isFocused iframe {
+  background-color: var(--njcic-white) !important;
   border: 2px solid var(--njcic-gray-200) !important;
-  color: var(--njcic-navy) !important;
-  background: var(--njcic-white) !important;
-  transition: var(--njcic-transition);
+  border-radius: var(--njcic-radius-sm) !important;
 }
 
-.at label.at-btn-radio:hover {
+.at .vgs-input-container iframe:focus,
+.at .vgs-input-container.isFocused iframe {
   border-color: var(--njcic-teal) !important;
 }
 
-.at label.at-btn-radio.active,
-.at label.at-btn-radio:checked {
-  background-color: var(--njcic-robin) !important;
-  border-color: var(--njcic-robin) !important;
-  color: var(--njcic-white) !important;
-}
-
 
 /* -----------------------------------------------
-   7. SUBMIT BUTTON
-   ActionTag: .btn-at, .btn-at-primary,
-   .at-form-submit (wrapper), .at-submit
-   Default: bg #228ae6, border-radius 4px, 14px font
+   11. CHECKBOXES
+   ActionTag draws the box with
+   span.at-checkbox-title-container::before
    ----------------------------------------------- */
 
-.at .btn-at,
-.at .btn-at-primary {
+.at label.at-check {
+  font-weight: 500 !important;
+}
+
+.at .at-checkbox-title,
+.at .at-checkbox-title-container,
+.at .at-cover-costs-info {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: var(--njcic-gray-800) !important;
+}
+
+.at .at-cover-costs-info strong {
+  font-weight: 800 !important;
+  color: var(--njcic-navy) !important;
+}
+
+.at .at-checkbox-title-container::before,
+.at input[type="checkbox"] + span.at-checkbox-title-container::before {
+  background-color: var(--njcic-white) !important;
+  border: 2px solid var(--njcic-gray-300) !important;
+  border-radius: 5px !important;
+}
+
+.at label input[type="checkbox"]:checked + span::before {
+  background-color: var(--njcic-navy) !important;
+  border-color: var(--njcic-navy) !important;
+}
+
+.at label input[type="checkbox"]:hover + span::before,
+.at label input[type="checkbox"]:focus + span::before {
+  border-color: var(--njcic-teal) !important;
+  box-shadow: 0 0 0 3px rgba(58, 197, 201, 0.18) !important;
+}
+
+.at input[type="radio"] {
+  accent-color: var(--njcic-navy) !important;
+}
+
+/* -----------------------------------------------
+   12. SUBMIT BUTTON
+   ActionTag: input.at-submit.btn-at.btn-at-primary
+   ----------------------------------------------- */
+
+.at .at-form-submit {
+  padding: 16px 0 0 !important;
+}
+
+.at .at-form-submit .btn-at,
+.at .at-form-submit .btn-at-primary,
+.at input.at-submit {
+  float: none !important;
   display: block !important;
   width: 100% !important;
-  padding: 16px 32px !important;
-  margin-top: 12px !important;
-  margin-bottom: 16px !important;
+  margin: 8px 0 0 !important;
+  padding: 18px 32px !important;
   font-family: var(--njcic-font) !important;
-  font-size: 17px !important;
-  font-weight: 700 !important;
+  font-size: 19px !important;
+  font-weight: 800 !important;
   letter-spacing: 0.02em;
   color: var(--njcic-white) !important;
   background-color: var(--njcic-orange) !important;
-  border: 2px solid transparent !important;
+  border: 0 !important;
   border-radius: var(--njcic-radius-pill) !important;
-  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(243, 66, 19, 0.28) !important;
+  text-shadow: none !important;
+  cursor: pointer;
   transition: var(--njcic-transition);
-  text-align: center !important;
-  text-transform: none !important;
   -webkit-appearance: none;
   appearance: none;
-  box-shadow: none !important;
 }
 
-.at .btn-at:hover,
-.at .btn-at-primary:hover {
+.at .at-form-submit .btn-at:hover,
+.at input.at-submit:hover {
   background-color: var(--njcic-orange-light) !important;
-  transform: translateY(-3px);
-  box-shadow: var(--njcic-shadow-md) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(243, 66, 19, 0.32) !important;
 }
 
-.at .btn-at:active,
-.at .btn-at-primary:active {
-  transform: translateY(-1px);
-  box-shadow: var(--njcic-shadow-sm) !important;
+.at .at-form-submit .btn-at:active,
+.at input.at-submit:active {
+  transform: translateY(0);
 }
 
-.at .btn-at:focus-visible,
-.at .btn-at-primary:focus-visible {
+.at .at-form-submit .btn-at:focus-visible,
+.at input.at-submit:focus-visible {
   outline: 3px solid var(--njcic-teal) !important;
   outline-offset: 3px;
 }
 
-/* Submit wrapper padding */
-.at .at-form-submit {
-  padding: 10px 0 !important;
-}
-
-
 /* -----------------------------------------------
-   8. VALIDATION & ERROR STATES
-   ActionTag: input.error, textarea.error,
-   select.error, small.error, .at-error, .at-alert
-   Default: error color #fa5252
+   13. ERRORS & ALERTS
    ----------------------------------------------- */
 
-/* Error border on inputs */
 .at input.error,
 .at textarea.error,
-.at select.error {
+.at select.error,
+.at .error input[type="text"],
+.at .error input[type="email"],
+.at .error select {
   border-color: var(--njcic-orange) !important;
   box-shadow: 0 0 0 3px rgba(243, 66, 19, 0.1) !important;
 }
 
-/* Error message text */
-.at small.error {
-  font-family: var(--njcic-font) !important;
+.at small.error,
+.at .error small,
+.at .at-error-console,
+.at .at-error-console * {
   font-size: 13px !important;
   font-weight: 600 !important;
   color: var(--njcic-orange) !important;
-  padding: 6px 0 !important;
-  margin-bottom: 8px !important;
 }
 
-/* Page-level alert banners */
-.at .at-alert,
-.at .at-page-alert {
-  font-family: var(--njcic-font) !important;
-  border-radius: var(--njcic-radius-sm) !important;
-  font-size: 15px !important;
-  border-left: 4px solid var(--njcic-orange);
-  background-color: rgba(243, 66, 19, 0.05) !important;
+/* Old newsletter CSS padded this even when empty */
+.at .at-page-alert:empty {
+  display: none !important;
+}
+
+.at .at-page-alert:not(:empty),
+.at .at-alert {
   padding: 14px 18px !important;
+  font-size: 15px !important;
   color: var(--njcic-gray-800) !important;
-}
-
-
-/* -----------------------------------------------
-   9. MULTI-STEP PROGRESS INDICATOR
-   ActionTag: .at-steps, .at-step, .at-step.active,
-   .at-step.valid
-   Default: bg #f1f3f5, active border #228ae6
-   ----------------------------------------------- */
-
-.at .at-steps {
-  background: var(--njcic-gray-100) !important;
-  padding: 10px !important;
+  background-color: rgba(243, 66, 19, 0.06) !important;
+  border-left: 4px solid var(--njcic-orange);
   border-radius: var(--njcic-radius-sm) !important;
-  margin-bottom: 24px;
-}
-
-.at .at-step {
-  font-family: var(--njcic-font) !important;
-  color: var(--njcic-gray-600) !important;
-  font-weight: 600;
-}
-
-.at .at-step.active {
-  border-bottom-color: var(--njcic-teal) !important;
-  color: var(--njcic-navy) !important;
-}
-
-.at .at-step.valid {
-  color: var(--njcic-teal) !important;
 }
 
 
 /* -----------------------------------------------
-   10. LINKS
+   14. LINKS
    ----------------------------------------------- */
 
 .at a {
-  color: var(--njcic-teal) !important;
-  text-decoration: none !important;
-  font-weight: 600;
-  transition: var(--njcic-transition);
+  color: var(--njcic-navy) !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--njcic-robin);
+  text-underline-offset: 3px;
 }
 
 .at a:hover {
-  color: var(--njcic-navy) !important;
+  color: var(--njcic-orange) !important;
 }
 
 
 /* -----------------------------------------------
-   11. RESPONSIVE — MOBILE
-   ActionTag breakpoints: 40em (640px), 30em (480px)
+   15. PAGE FOOTER
+   ActionTag: footer.container.form-footer.at
    ----------------------------------------------- */
 
+footer.form-footer.at {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 32px 24px 40px !important;
+  border-top: 1px solid var(--njcic-gray-200);
+  text-align: center;
+}
+
+footer.form-footer.at p {
+  margin: 0 0 6px !important;
+  font-size: 14px !important;
+}
+
+footer.form-footer.at a {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  text-decoration: none;
+}
+
+/* Remove the boxed outline the old theme put on this line */
+footer.form-footer.at .at-paid-for-by {
+  display: inline-block;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 13px !important;
+  color: var(--njcic-gray-600) !important;
+}
+
+.poweredby,
+div.poweredby,
+.poweredby a {
+  background-color: transparent !important;
+  color: var(--njcic-gray-600) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+
+/* -----------------------------------------------
+   16. RESPONSIVE
+   ----------------------------------------------- */
+
+@media (max-width: 999px) {
+  .at section.at-inner {
+    max-width: 680px !important;
+    padding-top: 36px !important;
+  }
+
+  .at header.at-title {
+    font-size: 36px !important;
+  }
+}
+
 @media (max-width: 40em) {
-  .at .at-inner {
-    margin: 20px 16px;
-    padding: 32px 24px !important;
+  header.container.at {
+    padding: 12px 12px 0 !important;
+  }
+
+  .at-banner img {
     border-radius: 12px;
   }
 
-  .at h2 {
-    font-size: 24px !important;
+  .at section.at-inner {
+    padding: 28px 16px 40px !important;
   }
 
-  .at input[type="text"],
-  .at input[type="email"],
-  .at input[type="tel"],
-  .at textarea,
-  .at select {
-    padding: 12px 14px !important;
-    font-size: 16px !important; /* prevents iOS zoom */
+  .at header.at-title {
+    font-size: 30px !important;
   }
 
-  .at .btn-at,
-  .at .btn-at-primary {
-    padding: 14px 24px !important;
-    font-size: 16px !important;
+  .at .HeaderHtml p {
+    font-size: 17px !important;
+  }
+
+  .at .HeaderHtml p:first-child,
+  .at .HeaderHtml .njcic-lead {
+    font-size: 19px !important;
+  }
+
+  .at section.at-inner > form {
+    padding: 28px 20px !important;
   }
 
   .at .at-row {
     flex-direction: column;
   }
-}
 
-@media (max-width: 30em) {
-  .at .at-inner {
-    margin: 12px 8px;
-    padding: 24px 16px !important;
+  .at .at-row > * {
+    width: 100% !important;
   }
 }
-
-
-/* -----------------------------------------------
-   12. OPTIONAL — ALTERNATIVE BUTTON COLORS
-   Uncomment one block to swap the submit button.
-   ----------------------------------------------- */
-
-/* --- Teal Button (softer) ---
-.at .btn-at,
-.at .btn-at-primary {
-  background-color: var(--njcic-teal) !important;
-}
-.at .btn-at:hover,
-.at .btn-at-primary:hover {
-  background-color: var(--njcic-teal-light) !important;
-}
-*/
-
-/* --- Navy Button (formal) ---
-.at .btn-at,
-.at .btn-at-primary {
-  background-color: var(--njcic-navy) !important;
-}
-.at .btn-at:hover,
-.at .btn-at-primary:hover {
-  background-color: var(--njcic-navy-light) !important;
-}
-*/
-
-/* --- Yellow Accent Button ---
-.at .btn-at,
-.at .btn-at-primary {
-  background-color: var(--njcic-yellow) !important;
-  color: var(--njcic-navy) !important;
-}
-.at .btn-at:hover,
-.at .btn-at-primary:hover {
-  background-color: var(--njcic-yellow-light) !important;
-}
-*/
-
-
-/* -----------------------------------------------
-   13. QUICK SIZE & POSITION OVERRIDES
-   Uncomment and adjust to fine-tune.
-   ----------------------------------------------- */
-
-/* Form width */
-/* .at .at-inner { max-width: 500px; }  -- narrower */
-/* .at .at-inner { max-width: 700px; }  -- wider   */
-
-/* Form position */
-/* .at .at-inner { margin-left: 0; }    -- align left  */
-/* .at .at-inner { margin-right: 0; }   -- align right */
-
-/* Field spacing */
-/* .at fieldset { padding-bottom: 24px; } */
-
-/* Input height */
-/* .at input[type="text"] { padding: 18px 20px !important; } */
-
-/* Button width — auto instead of full-width */
-/* .at .btn-at { width: auto !important; margin: 12px auto !important; } */
